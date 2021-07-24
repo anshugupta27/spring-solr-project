@@ -473,3 +473,15 @@ Caused by: java.io.IOException: An established connection was aborted by the sof
 2021-07-24 21:43:42.728  INFO 23140 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
 2021-07-24 21:43:43.134  INFO 23140 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Started SpringSolrApplicationTests in 8.557 seconds (JVM running for 11.918)
 2021-07-24 21:43:43.637  INFO 23140 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-24 22:22:50.349  INFO 18200 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Starting SpringSolrApplicationTests on DESKTOP-MVAORKB with PID 18200 (started by Administrator in C:\Users\Administrator\Documents\DB-Github\solr-index-ui\spring-solr-email)
+2021-07-24 22:22:50.353 DEBUG 18200 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
+2021-07-24 22:22:50.356  INFO 18200 --- [main] c.d.solr.api.SpringSolrApplicationTests  : No active profile set, falling back to default profiles: default
+2021-07-24 22:22:52.116  INFO 18200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Solr repositories in DEFAULT mode.
+2021-07-24 22:22:52.377  INFO 18200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 207ms. Found 1 Solr repository interfaces.
+2021-07-24 22:22:55.435  INFO 18200 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-07-24 22:22:56.060  INFO 18200 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-24 22:22:57.737  INFO 18200 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-07-24 22:22:57.862  INFO 18200 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-07-24 22:22:57.946  INFO 18200 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-07-24 22:22:58.435  INFO 18200 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Started SpringSolrApplicationTests in 8.729 seconds (JVM running for 11.66)
+2021-07-24 22:22:58.925  INFO 18200 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
