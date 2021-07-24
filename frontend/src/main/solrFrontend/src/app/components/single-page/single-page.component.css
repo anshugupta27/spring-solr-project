@@ -1,0 +1,59 @@
+/* close button */
+
+.btn{
+    margin-left:700px;
+}
+
+/* header */
+.head{
+    margin-left:2px;
+}
+
+/* show more */
+.limitTextHeight {
+    height: 25px;
+    
+    overflow: hidden;
+}
+.clickme{
+    padding-left:650px;
+    font-weight: 400;
+    color:blue;
+    
+}
+
+/* card */
+.card{
+    margin-left:200px;
+    margin-top:20px;
+    border-color:black;
+}
+
+
+  /* font */
+  
+  b{
+    color:black;
+    font-family: Arial;
+  }
+  p{
+    font-family: Arial;
+    font-weight: 900px;
+  }
+  
+/* body */
+.body{
+    font-size:15px;
+    font-style:arial;
+}
+
+/* body */
+.colored-section{
+    margin-top:0px;
+    padding-top:10px;
+    padding-left:-900px;
+    padding-bottom:100px;
+    font-style: arial;
+    /* background-color: #EEEEEE; */
+    
+  }

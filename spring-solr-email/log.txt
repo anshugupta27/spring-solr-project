@@ -1,0 +1,475 @@
+2021-07-24 00:00:03.053 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:00:11.673 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:00:12.766 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:00:18.937 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:00:58.917 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:01:02.587 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:01:07.858 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:01:12.384 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:01:13.449 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:01:20.182 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:01:22.177 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:01:23.140 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:01:39.625 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:04:11.683 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:04:12.794 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:04:14.928 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:04:15.722 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:04:17.435 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:04:20.019 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:05:13.282 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:05:13.893 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:06:37.167 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:06:37.964 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:08:54.516 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:08:55.418 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:09:16.198  WARN 6072 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'fromDate' is not present]
+2021-07-24 00:10:05.236 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:10:06.623 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:10:07.536 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:10:08.807 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:10:25.447 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:11:24.215 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:11:38.374 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:11:39.734 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:11:40.999 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:11:42.400 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:13:42.975 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:13:44.190 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:15:36.004 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:15:48.667 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:17:31.747 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:17:47.387 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:18:28.180 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:19:18.569 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:19:56.789 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:20:33.026 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:20:48.078 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:21:08.017 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:21:15.344 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:21:52.106 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:22:00.260 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:22:41.590 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:23:05.697 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:23:07.999  WARN 6072 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Failure in @ExceptionHandler com.demo.solr.api.exception.GlobalExceptionHandler#globleExcpetionHandler(Exception, WebRequest)
+
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: An established connection was aborted by the software in your host machine
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:353) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.connector.OutputBuffer.flushByteBuffer(OutputBuffer.java:783) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:688) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:388) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:366) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:96) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.util.StreamUtils$NonClosingOutputStream.write(StreamUtils.java:287) ~[spring-core-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator._flushBuffer(UTF8JsonGenerator.java:2161) ~[jackson-core-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1175) ~[jackson-core-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1008) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:346) ~[spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:104) ~[spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:277) ~[spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219) ~[spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82) ~[spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123) ~[spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:403) ~[spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.46.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.46.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_181]
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:1.8.0_181]
+	at sun.nio.ch.SocketDispatcher.write(Unknown Source) ~[na:1.8.0_181]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source) ~[na:1.8.0_181]
+	at sun.nio.ch.IOUtil.write(Unknown Source) ~[na:1.8.0_181]
+	at sun.nio.ch.SocketChannelImpl.write(Unknown Source) ~[na:1.8.0_181]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:135) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:118) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:151) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1367) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:766) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:586) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:530) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:546) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.doWrite(ChunkedOutputFilter.java:110) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:193) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.Response.doWrite(Response.java:606) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:340) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	... 61 common frames omitted
+
+2021-07-24 00:23:08.022 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:23:21.503 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:23:27.514 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:23:44.264  WARN 6072 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'fromDate' is not present]
+2021-07-24 00:23:57.007  WARN 6072 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'fromDate' is not present]
+2021-07-24 00:29:22.866 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:30:20.128 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:30:39.733 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:34:12.654 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:34:17.685 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:34:19.744 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:34:33.782 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 00:35:18.463 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:35:25.360  WARN 6072 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'fromDate' is not present]
+2021-07-24 00:36:40.619 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 00:36:46.699  WARN 6072 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'fromDate' is not present]
+2021-07-24 00:37:29.450 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 08:40:41.928 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 08:41:01.729 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 08:41:05.573 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 08:41:06.242 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 08:41:19.256  WARN 6072 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'fromDate' is not present]
+2021-07-24 08:44:49.796 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 08:47:26.966 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 08:54:05.285 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 08:54:43.189 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 08:54:45.560 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 08:54:45.632  WARN 6072 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Failure in @ExceptionHandler com.demo.solr.api.exception.GlobalExceptionHandler#globleExcpetionHandler(Exception, WebRequest)
+
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: An established connection was aborted by the software in your host machine
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:353) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.connector.OutputBuffer.flushByteBuffer(OutputBuffer.java:783) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:688) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:388) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:366) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:96) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.util.StreamUtils$NonClosingOutputStream.write(StreamUtils.java:287) ~[spring-core-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator._flushBuffer(UTF8JsonGenerator.java:2161) ~[jackson-core-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1175) ~[jackson-core-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1008) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:346) ~[spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:104) ~[spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:277) ~[spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219) ~[spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82) ~[spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123) ~[spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:403) ~[spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.46.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.46.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_181]
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:1.8.0_181]
+	at sun.nio.ch.SocketDispatcher.write(Unknown Source) ~[na:1.8.0_181]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source) ~[na:1.8.0_181]
+	at sun.nio.ch.IOUtil.write(Unknown Source) ~[na:1.8.0_181]
+	at sun.nio.ch.SocketChannelImpl.write(Unknown Source) ~[na:1.8.0_181]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:135) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:118) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:151) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1367) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:766) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:586) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:530) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:546) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.doWrite(ChunkedOutputFilter.java:110) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:193) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.Response.doWrite(Response.java:606) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:340) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	... 61 common frames omitted
+
+2021-07-24 08:54:54.779 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 08:55:01.450 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 08:55:23.310 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 08:55:38.996  WARN 6072 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'fromDate' is not present]
+2021-07-24 08:55:42.350 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 08:57:25.923 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 08:57:35.922 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 08:57:50.855 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 08:58:31.811 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 08:58:50.444 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 08:58:59.947  WARN 6072 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'fromDate' is not present]
+2021-07-24 08:59:41.979 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 08:59:47.768  WARN 6072 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'fromDate' is not present]
+2021-07-24 09:00:11.377 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:00:18.177  WARN 6072 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'fromDate' is not present]
+2021-07-24 09:00:26.897 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:00:35.388 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:00:41.684  WARN 6072 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'fromDate' is not present]
+2021-07-24 09:00:50.074 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:00:55.380  WARN 6072 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'fromDate' is not present]
+2021-07-24 09:01:20.973 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:01:30.249 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:02:03.228 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:02:51.577 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:03:22.056  WARN 6072 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'fromDate' is not present]
+2021-07-24 09:04:17.972 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:04:42.631 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:05:07.270 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:05:34.797 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:05:40.271 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:06:53.715 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:06:57.989 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:07:03.126 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:07:34.122 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:07:38.103 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:09:11.227 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:09:13.905 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:09:15.013 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:09:23.110 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:09:27.806 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:09:36.555 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:09:40.379 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:09:50.725 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:09:58.547 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:10:00.292 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:10:49.271 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:10:52.837 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:11:21.506 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:11:25.227 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:11:41.791 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:11:45.175 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:12:03.860 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:12:07.525 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:12:23.109 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:12:26.847 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:12:40.535 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:12:44.323 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:13:07.466 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:13:11.128 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:13:19.798 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:13:23.578 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:13:28.103 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:13:39.618 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:13:43.152 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:18:35.282 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:18:40.313 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:18:55.438 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:18:58.943 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:19:17.955 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:19:21.364 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:19:35.544 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:19:39.187 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:22:21.770 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:22:25.343 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:26:27.972 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:26:31.533 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:26:36.782 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:26:40.434 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:26:46.341 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:27:38.264 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:27:41.647 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:28:12.515 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:28:18.967 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:29:49.934 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:29:53.505 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:31:35.078 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:31:38.622 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:42:54.844 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:42:59.021 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:43:07.934 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:43:08.438 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:43:10.446 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:43:11.155 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:43:12.479 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:43:17.562 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:43:18.837 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:43:19.281 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:43:20.531 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:43:21.884 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:46:07.776 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:46:11.298 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:46:16.782 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:47:29.997 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:47:36.041 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 09:48:06.901 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 09:48:15.523 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:45:41.631 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:45:42.458 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:45:49.485 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:45:51.779 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:45:52.848 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:45:53.546 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:45:54.844 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:45:55.446 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:45:56.489 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:45:57.312 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:46:01.936 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:46:03.818 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:46:04.853 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:46:06.005 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:46:07.841 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:46:08.572 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:46:09.628 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:46:10.717 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:46:12.173 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:46:12.703 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:46:13.782 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:46:26.365 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:46:27.610 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:47:01.205 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:47:02.367 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:47:02.987 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:47:04.050 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:47:04.561 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:56:19.755 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:56:45.727 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 15:56:49.527 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:57:01.866 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 15:57:08.402 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:57:13.536 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:57:19.167  WARN 6072 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'fromDate' is not present]
+2021-07-24 15:58:20.839 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:58:21.323 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:58:22.415 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:58:22.994 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:58:24.056 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:58:24.776 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:58:25.759 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 15:59:07.657 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:03:47.826 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:03:57.583 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:04:04.055 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:04:11.618 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:04:18.140 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:04:24.446 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:04:31.449 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:04:38.228 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:04:45.017 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:07:31.309 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 16:07:32.203 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 16:07:38.359 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 16:07:39.112 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 16:09:22.442 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:09:40.295 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:09:50.555 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:09:58.597 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:10:03.256 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:10:37.627 DEBUG 6072 --- [http-nio-8080-exec-1] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:10:46.328 DEBUG 6072 --- [http-nio-8080-exec-2] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:12:11.256 DEBUG 6072 --- [http-nio-8080-exec-3] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:12:43.979 DEBUG 6072 --- [http-nio-8080-exec-4] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:12:53.307 DEBUG 6072 --- [http-nio-8080-exec-5] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:13:03.833 DEBUG 6072 --- [http-nio-8080-exec-6] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:13:48.329 DEBUG 6072 --- [http-nio-8080-exec-7] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 16:13:49.019 DEBUG 6072 --- [http-nio-8080-exec-8] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 16:15:20.741 DEBUG 6072 --- [http-nio-8080-exec-9] c.d.solr.api.controller.emailController  : Gell All Emails API call
+2021-07-24 16:15:24.336 DEBUG 6072 --- [http-nio-8080-exec-10] c.d.solr.api.controller.emailController  : get By ID API call
+2021-07-24 16:31:58.534  INFO 18092 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Starting SpringSolrApplicationTests on DESKTOP-MVAORKB with PID 18092 (started by Administrator in C:\Users\Administrator\Documents\Maven\dsiu\spring-solr-email)
+2021-07-24 16:31:58.536 DEBUG 18092 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
+2021-07-24 16:31:58.537  INFO 18092 --- [main] c.d.solr.api.SpringSolrApplicationTests  : No active profile set, falling back to default profiles: default
+2021-07-24 16:32:00.387  INFO 18092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Solr repositories in DEFAULT mode.
+2021-07-24 16:32:00.552  INFO 18092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133ms. Found 1 Solr repository interfaces.
+2021-07-24 16:32:03.984  INFO 18092 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-07-24 16:32:04.577  INFO 18092 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-24 16:32:06.404  INFO 18092 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-07-24 16:32:06.469  INFO 18092 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-07-24 16:32:06.534  INFO 18092 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-07-24 16:32:06.889  INFO 18092 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Started SpringSolrApplicationTests in 9.048 seconds (JVM running for 12.013)
+2021-07-24 16:32:07.418  INFO 18092 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-24 17:19:01.403  INFO 23448 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Starting SpringSolrApplicationTests on DESKTOP-MVAORKB with PID 23448 (started by Administrator in C:\Users\Administrator\Documents\Maven\dsiu\spring-solr-email)
+2021-07-24 17:19:01.405 DEBUG 23448 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
+2021-07-24 17:19:01.406  INFO 23448 --- [main] c.d.solr.api.SpringSolrApplicationTests  : No active profile set, falling back to default profiles: default
+2021-07-24 17:19:03.217  INFO 23448 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Solr repositories in DEFAULT mode.
+2021-07-24 17:19:03.411  INFO 23448 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 160ms. Found 1 Solr repository interfaces.
+2021-07-24 17:19:06.478  INFO 23448 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-07-24 17:19:07.125  INFO 23448 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-24 17:19:08.841  INFO 23448 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-07-24 17:19:08.929  INFO 23448 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-07-24 17:19:09.047  INFO 23448 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-07-24 17:19:09.459  INFO 23448 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Started SpringSolrApplicationTests in 8.799 seconds (JVM running for 11.864)
+2021-07-24 17:19:09.945  INFO 23448 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-24 21:01:40.749  INFO 19132 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Starting SpringSolrApplicationTests on DESKTOP-MVAORKB with PID 19132 (started by Administrator in C:\Users\Administrator\Documents\DB-Projects\solr-index-ui\Maven\dsiu\spring-solr-email)
+2021-07-24 21:01:40.752 DEBUG 19132 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
+2021-07-24 21:01:40.759  INFO 19132 --- [main] c.d.solr.api.SpringSolrApplicationTests  : No active profile set, falling back to default profiles: default
+2021-07-24 21:01:42.701  INFO 19132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Solr repositories in DEFAULT mode.
+2021-07-24 21:01:42.913  INFO 19132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 172ms. Found 1 Solr repository interfaces.
+2021-07-24 21:01:45.967  INFO 19132 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-07-24 21:01:46.702  INFO 19132 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-24 21:01:48.340  INFO 19132 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-07-24 21:01:48.412  INFO 19132 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-07-24 21:01:48.501  INFO 19132 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-07-24 21:01:48.850  INFO 19132 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Started SpringSolrApplicationTests in 8.758 seconds (JVM running for 11.701)
+2021-07-24 21:01:49.508  INFO 19132 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-24 21:43:35.257  INFO 23140 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Starting SpringSolrApplicationTests on DESKTOP-MVAORKB with PID 23140 (started by Administrator in C:\Users\Administrator\Documents\DB-Github\solr-index-ui\spring-solr-email)
+2021-07-24 21:43:35.262 DEBUG 23140 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
+2021-07-24 21:43:35.263  INFO 23140 --- [main] c.d.solr.api.SpringSolrApplicationTests  : No active profile set, falling back to default profiles: default
+2021-07-24 21:43:37.069  INFO 23140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Solr repositories in DEFAULT mode.
+2021-07-24 21:43:37.225  INFO 23140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117ms. Found 1 Solr repository interfaces.
+2021-07-24 21:43:40.231  INFO 23140 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-07-24 21:43:40.847  INFO 23140 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-24 21:43:42.580  INFO 23140 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-07-24 21:43:42.658  INFO 23140 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-07-24 21:43:42.728  INFO 23140 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-07-24 21:43:43.134  INFO 23140 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Started SpringSolrApplicationTests in 8.557 seconds (JVM running for 11.918)
+2021-07-24 21:43:43.637  INFO 23140 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

@@ -1,0 +1,5 @@
+{
+    "uncleaned_data_path" : "C:\\Users\\Administrator\\Documents\\Maven\\dsiu\\dataHandler\\tests\\data\\Raw_Data",
+    "cleaned_data_path" : "C:\\Users\\Administrator\\Documents\\Maven\\dsiu\\dataHandler\\tests\\data\\Processed_Data",
+    "expected_data_path" : "C:\\Users\\Administrator\\Documents\\Maven\\dsiu\\dataHandler\\tests\\data\\Expected_Data"
+}
