@@ -104,7 +104,7 @@ class DataCleaner:
             logging.info('Emails Fields extraction completed Successfully! -' + field)
             return column
 
-        except Exception as e:
+        except Exception as e:   # pragma: no cover
             print('ERROR:', e)
 
     # @Input : Takes the list of data to be processed
@@ -119,7 +119,7 @@ class DataCleaner:
             logging.debug('Emails Body extraction completed Successfully')
             return column
 
-        except Exception as e:
+        except Exception as e:   # pragma: no cover
             print('ERROR:', e)
 
     # This function Reads the data csv of Uncleaned data and
@@ -148,11 +148,11 @@ class DataCleaner:
             df.to_csv(cleaned_file_path, index=False)
             logging.info('Cleaned Data CSV added Successfully!')
 
-        except KeyError:
+        except KeyError:   # pragma: no cover
             print('ERROR: Missing key:values in your config json file of data folders ')
 
-        except ValueError:
+        except ValueError:   # pragma: no cover
             print("ERROR: Please check weather data csv is present at given location and is not empty.")
 
-        except Exception as e:
+        except Exception as e:   # pragma: no cover
             print("ERROR:", e)

@@ -33,7 +33,7 @@ class DataHandler:
                 dataUploader = DataUploader()
                 dataUploader.index_data(self)
 
-        except Exception as e:
+        except Exception as e:   # pragma: no cover
             print('ERROR:', e)
 
 

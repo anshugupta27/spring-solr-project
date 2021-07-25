@@ -19,13 +19,13 @@ class ReadWriteHelper:
                 logging.info('Configuration File parsed and converted into JSON')
                 return configurations
 
-        except PermissionError:
+        except PermissionError:   # pragma: no cover
             print("ERROR: Please provide correct path to Your config.json file")
 
-        except JSONDecodeError:
+        except JSONDecodeError:   # pragma: no cover
             print("ERROR: Please provide necessary Information in your config.json file ")
 
-        except Exception as otherErrors:
+        except Exception as otherErrors:   # pragma: no cover
             print(otherErrors)
 
         finally:
@@ -41,14 +41,14 @@ class ReadWriteHelper:
             logging.debug('CSV files location fetched Successfully!')
             return file_path
 
-        except KeyError:
+        except KeyError:   # pragma: no cover
             print("ERROR: Missing key:values in your config json file of data folders")
 
-        except ValueError:
+        except ValueError:   # pragma: no cover
             print("ERROR: Please provide correct path of folder in your config json file")
 
-        except IndexError:
+        except IndexError:   # pragma: no cover
             print("ERROR: Data Not Found !!! ")
 
-        except Exception as e:
+        except Exception as e:   # pragma: no cover
             print("ERROR:", e)
