@@ -63,7 +63,7 @@
 
      <div *ngIf="email.body">
         <b>MESSAGE : </b><p [ngClass]="{'limitTextHeight': isReadMoretext}" class="card-text text-left" [innerText]="messageBody">
-
+     {{email.body}}
      <div *ngIf="email.body.length>50;">
          <b class="clickme" (click)="showText()">{{ isReadMoretext ? '...Read More': 'Read Less' }}</b>
      </div>

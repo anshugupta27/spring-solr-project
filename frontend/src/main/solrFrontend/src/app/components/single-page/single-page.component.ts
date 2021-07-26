@@ -32,6 +32,7 @@ export class SinglePageComponent implements OnInit {
     
   }
 
+  
   isReadMorecc = true
   isReadMoreto = true 
   isReadMoretext = true 

@@ -1,5 +1,3 @@
-
-<!-- ********************************************** -->
 <form [formGroup]="filterForm" (ngSubmit)="onSubmit()">
 
 <div class="filter">
@@ -167,7 +165,7 @@ unSortIcon="true"
               <b style="padding-left:7px;">Message :</b>
                 <div class="modal-body">
                 <div *ngFor="let email of emails">
-                <p class="card-text text-left" [innerText]="messageBody"></p>
+                <p class="card-text text-left" [innerText]="messageBody">{{email.body}}</p>
           </div>
        </div>
       </ng-template>

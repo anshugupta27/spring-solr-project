@@ -11,9 +11,18 @@ export class ApiServiceService {
 
   constructor(private httpClient: HttpClient) { }
    public backendRoute = '/api/v1' ;
+   public message!:Email[] ;
+  
+  setMessage ( emails:any )
+  {
+    this.message = emails;
+  }
+  
+  getMessage()
+  {
+    return this.message ;
+  }
 
-
- 
 
   //  get All Documents
   getAllDocuments(limit:number, offset:number){
@@ -29,6 +38,7 @@ export class ApiServiceService {
     {params: params}
     );
   }
+
 
 // get By Date 
 getByDate(fromDate:any,toDate:any)
@@ -47,56 +57,11 @@ getByDate(fromDate:any,toDate:any)
 }
 
 
-
-
-
-
-
-
   // get by ID
   getDocumentById(id:any): Observable<Email[]> {
     return this.httpClient.get<Email[]>(`${this.backendRoute}/getById/${id}`)
   }
 
-  // // get by message ID 
-  // getDocumentByMessageID(messageID:string){
-  //   const httpOptions = {
-  //       headers: new HttpHeaders({
-  //         'Content-Type' : 'application/json',
-  //       }),
-  //     };
-  //     return this.httpClient.get(`${this.backendRoute}/getMessageId/${messageID}`,
-  //     httpOptions
-  //     );
-  // }
 
-
-  // // get By From
-  // getDocumentByFrom(from:string){
-  //   const httpOptions = {
-  //     headers: new HttpHeaders({
-  //       'Content-Type' : 'application/json',
-  //     }),
-  //   };
-  //   return this.httpClient.get(`${this.backendRoute}/getFrom/${from}`,
-  //   httpOptions
-  //   );
-  //   }
-
-
-
-  public message!:Email[] ;
-  
-  setMessage ( emails:any )
-  {
-    this.message = emails;
-  }
-  
-  getMessage()
-  {
-    return this.message ;
-  }
-
- 
 
 }

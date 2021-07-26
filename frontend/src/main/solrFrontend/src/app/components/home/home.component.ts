@@ -19,12 +19,16 @@ import { MessageIdFilterComponent } from '../message-id-filter/message-id-filter
 export class HomeComponent implements OnInit {
 
 
-  constructor(private apiService:ApiServiceService , private httpClient: HttpClient,
-    private modalService: NgbModal ,  private fb: FormBuilder,
-    private calendar: NgbCalendar, public formatter: NgbDateParserFormatter,public config: NgbInputDatepickerConfig) { 
-
-      // date now
-      this.fromDate = null;
+  constructor(private apiService:ApiServiceService,
+    private httpClient: HttpClient,
+    private modalService: NgbModal,
+    private fb: FormBuilder,
+    private calendar: NgbCalendar,
+    public formatter: NgbDateParserFormatter,
+    public config: NgbInputDatepickerConfig) 
+    { 
+       // date
+    this.fromDate = null;
     this.toDate = null;
     config.placement = ['top-left', 'bottom-right'];
     }
@@ -103,8 +107,7 @@ dropdownSettingsFrom = {};
   }
 
   // drop down Message ID - DeSelected
-  onItemDeSelectID(item:any)
-  {
+  onItemDeSelectID(item:any) {
     for ( let [i , list] of this.getByMessageIDList.entries())
     {
       if ( list.id == item )
@@ -142,8 +145,7 @@ dropdownSettingsFrom = {};
   }
 
   // drop down From - DeSelected
-  onItemDeSelectFrom(item:any)
-  {
+  onItemDeSelectFrom(item:any) {
     for ( let [i , list] of this.getByFromList.entries())
     {
       if ( list.from == item )
@@ -152,7 +154,7 @@ dropdownSettingsFrom = {};
   }
 
 
-  // date now
+  // date range picker
   public isHidden:Boolean = false;
   public pageCount:any;
   public filterApplied: boolean=false;
@@ -165,10 +167,11 @@ dropdownSettingsFrom = {};
 filterForm = this.fb.group({
   formMessageID: [''],
   formFrom: [''],
-  sentDate: ['']  //date now
+  sentDate: ['']  
  
 });
-// ***************************************************************************
+
+
 formatDate(sentDate:any) {
   var date: String = ""
     date += (Math.floor(sentDate.day/10) == 0 ? "0" +sentDate.day + "-" : "" + sentDate.day + "-");
@@ -188,14 +191,7 @@ onDateSelection(date: NgbDate) {
     this.fromDate = date;
   }
 
-  // var printDateFrom = this.formatDate(this.fromDate) ;
-  // var printDateTo = this.formatDate(this.toDate)  ;
-  // var str = printDateFrom + " " + printDateTo ;
-  // var dp = document.getElementById("datepicker1");
-  // if ( dp )
-  // {
-  //   dp.innerText = str ;
-  // } 
+ 
   
 }
 
@@ -215,60 +211,31 @@ validateInput(currentValue: NgbDate | null, input: string): NgbDate | null {
   const parsed = this.formatter.parse(input);
   return parsed && this.calendar.isValid(NgbDate.from(parsed)) ? NgbDate.from(parsed) : currentValue;
 }
-// ****************************************************************************
+
 public space :string=" TO " ;
+
+
 // on Form Submit
 onSubmit() {
  
-  if(this.fromFlag && this.filterForm.value.formFrom ){
+  if(this.fromFlag && this.filterForm.value.formFrom ) {
     this.rowData = this.getByFromList ;
-    console.log("from list: " + this.getByFromList);
     this.filterForm.value.formFrom="";
   }
-  else if ( this.messageFlag && this.filterForm.value.formMessageID )
-  {
-   
-    console.log(this.getByMessageIDList);
+  else if ( this.messageFlag && this.filterForm.value.formMessageID ) {
     this.rowData = this.getByMessageIDList ;
-    console.log(this.rowData);
- 
+   
   }
-  else  if(this.fromDate != null && this.toDate != null){
+  else  if (this.fromDate != null && this.toDate != null) {
     let dateList: any=[]
     var fromDate = this.formatDate(this.fromDate);
     var toDate = this.formatDate(this.toDate);
 
-    // *******************************
     // server side 
     this.apiService.getByDate(fromDate,toDate).subscribe((res) => {
       this.rowData = res ; 
       
     })
-
-    
-    // *******************************
-  //   console.log(fromDate);
-  // console.log(toDate);
-    for (let key of this.fixedRowData) {
-      var dd = key.date.substr(0,2);
-      var mm = key.date.substr(3,2);
-      var yy = key.date.substr(6,4);
-      // console.log(dd);
-      // console.log(mm);
-      console.log(yy);
-      if(yy >= fromDate.substr(6,4) && yy <= toDate.substr(6,4)){
-        if(mm >= fromDate.substr(3,2) && mm <= toDate.substr(3,2))
-        {
-          if(dd >= fromDate.substr(0,2) && dd <= toDate.substr(0,2))
-          {
-            dateList.push(key) ;
-          }
-          
-        }
-        
-      }
-    }
-    this.rowData=dateList;
   }
   else
   this.rowData = null ;
@@ -289,9 +256,6 @@ resetButton(){
   this.filterForm.reset;
   this.rowData=this.fixedRowData;
   this.dateRangePicker = "" ;
-  // var x = document.getElementById("datepicker");
-  // if ( x )
-  // x.innerText = "";
 }
  
 
