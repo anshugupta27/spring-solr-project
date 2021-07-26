@@ -234,7 +234,6 @@ public class emailController {
 	}
 	
 	/**
-	 * 
 	 * @return count of all the Email
 	 */
 	

@@ -127,11 +127,11 @@ class SpringSolrApplicationTests {
 	public void GetByCCTest () throws ResourceNotFoundException{
 		List<Email> messages = new ArrayList<>();
 		Email message = new Email();
-		message.setCC("sally@yahoo.in");
+		message.setCc("sally@yahoo.in");
 		messages.add(message);
 		when(repository.findAllByCC(Mockito.anyString())).thenReturn(messages);
 		Assertions.assertEquals(1, service.getByCC("sally@yahoo.in").size());
-		Assertions.assertEquals("sally@yahoo.in", service.getByCC("sally@yahoo.in").get(0).getCC());
+		Assertions.assertEquals("sally@yahoo.in", service.getByCC("sally@yahoo.in").get(0).getCc());
 	}
 
 	@Test
@@ -139,11 +139,11 @@ class SpringSolrApplicationTests {
 	public void testGetByBCC () throws ResourceNotFoundException {
 		List<Email> messages = new ArrayList<>();
 		Email message = new Email();
-		message.setBCC("richard@testing.in");
+		message.setBcc("richard@testing.in");
 		messages.add(message);
 		when(repository.findAllByBCC(Mockito.anyString())).thenReturn(messages);
 		Assertions.assertEquals(1, service.getByBCC("richard@testing.in").size());
-		Assertions.assertEquals("richard@testing.in", service.getByBCC("richard@testing.in").get(0).getBCC());
+		Assertions.assertEquals("richard@testing.in", service.getByBCC("richard@testing.in").get(0).getBcc());
 	}
 
 	@Test
