@@ -142,7 +142,7 @@ unSortIcon="true"
         </div>
        
   </div>
-<div *ngFor="let email of emails"> <p class="card-title scroll"><span class="scrollText" [innerText]="messageBody"></span></p></div>
+<div *ngFor="let email of emails"> <p class="card-title scroll"><span class="scrollText" [innerText]="messageBody">{{email.body}}</span></p></div>
       </div>
 
 
