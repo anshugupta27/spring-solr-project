@@ -1,96 +1,12 @@
-2021-07-25 00:07:19.457  INFO 19052 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Starting SpringSolrApplicationTests on DESKTOP-MVAORKB with PID 19052 (started by Administrator in C:\Users\Administrator\Documents\DB-Github\solr-index-ui\spring-solr-email)
-2021-07-25 00:07:19.466 DEBUG 19052 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
-2021-07-25 00:07:19.467  INFO 19052 --- [main] c.d.solr.api.SpringSolrApplicationTests  : No active profile set, falling back to default profiles: default
-2021-07-25 00:07:21.296  INFO 19052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Solr repositories in DEFAULT mode.
-2021-07-25 00:07:21.449  INFO 19052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122ms. Found 1 Solr repository interfaces.
-2021-07-25 00:07:24.448  INFO 19052 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-07-25 00:07:25.197  INFO 19052 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-25 00:07:26.982  INFO 19052 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-07-25 00:07:27.041  INFO 19052 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-07-25 00:07:27.190  INFO 19052 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-07-25 00:07:27.633  INFO 19052 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Started SpringSolrApplicationTests in 8.871 seconds (JVM running for 11.934)
-2021-07-25 00:07:28.121  INFO 19052 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-07-25 00:09:54.062  INFO 9272 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Starting SpringSolrApplicationTests on DESKTOP-MVAORKB with PID 9272 (started by Administrator in C:\Users\Administrator\Documents\DB-Github\solr-index-ui\spring-solr-email)
-2021-07-25 00:09:54.064 DEBUG 9272 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
-2021-07-25 00:09:54.065  INFO 9272 --- [main] c.d.solr.api.SpringSolrApplicationTests  : No active profile set, falling back to default profiles: default
-2021-07-25 00:09:55.902  INFO 9272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Solr repositories in DEFAULT mode.
-2021-07-25 00:09:56.065  INFO 9272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126ms. Found 1 Solr repository interfaces.
-2021-07-25 00:09:58.906  INFO 9272 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-07-25 00:09:59.611  INFO 9272 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-25 00:10:01.488  INFO 9272 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-07-25 00:10:01.648  INFO 9272 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-07-25 00:10:01.724  INFO 9272 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-07-25 00:10:02.111  INFO 9272 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Started SpringSolrApplicationTests in 8.733 seconds (JVM running for 11.605)
-2021-07-25 00:10:02.596  INFO 9272 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-07-25 00:13:08.891  INFO 17540 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Starting SpringSolrApplicationTests on DESKTOP-MVAORKB with PID 17540 (started by Administrator in C:\Users\Administrator\Documents\DB-Github\solr-index-ui\spring-solr-email)
-2021-07-25 00:13:08.893 DEBUG 17540 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
-2021-07-25 00:13:08.895  INFO 17540 --- [main] c.d.solr.api.SpringSolrApplicationTests  : No active profile set, falling back to default profiles: default
-2021-07-25 00:13:10.904  INFO 17540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Solr repositories in DEFAULT mode.
-2021-07-25 00:13:11.079  INFO 17540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126ms. Found 1 Solr repository interfaces.
-2021-07-25 00:13:14.195  INFO 17540 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-07-25 00:13:14.918  INFO 17540 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-25 00:13:16.467  INFO 17540 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-07-25 00:13:16.545  INFO 17540 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-07-25 00:13:16.655  INFO 17540 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-07-25 00:13:17.576  INFO 17540 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Started SpringSolrApplicationTests in 9.378 seconds (JVM running for 12.34)
-2021-07-25 00:13:18.353  INFO 17540 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-07-25 00:14:29.490  INFO 22200 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Starting SpringSolrApplicationTests on DESKTOP-MVAORKB with PID 22200 (started by Administrator in C:\Users\Administrator\Documents\DB-Github\solr-index-ui\spring-solr-email)
-2021-07-25 00:14:29.494 DEBUG 22200 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
-2021-07-25 00:14:29.498  INFO 22200 --- [main] c.d.solr.api.SpringSolrApplicationTests  : No active profile set, falling back to default profiles: default
-2021-07-25 00:14:31.204  INFO 22200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Solr repositories in DEFAULT mode.
-2021-07-25 00:14:31.366  INFO 22200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122ms. Found 1 Solr repository interfaces.
-2021-07-25 00:14:34.484  INFO 22200 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-07-25 00:14:35.111  INFO 22200 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-25 00:14:36.671  INFO 22200 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-07-25 00:14:36.740  INFO 22200 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-07-25 00:14:36.806  INFO 22200 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-07-25 00:14:37.179  INFO 22200 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Started SpringSolrApplicationTests in 8.365 seconds (JVM running for 11.291)
-2021-07-25 00:14:37.666  INFO 22200 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-07-25 00:20:27.394  INFO 19964 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Starting SpringSolrApplicationTests on DESKTOP-MVAORKB with PID 19964 (started by Administrator in C:\Users\Administrator\Documents\DB-Github\solr-index-ui\spring-solr-email)
-2021-07-25 00:20:27.399 DEBUG 19964 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
-2021-07-25 00:20:27.401  INFO 19964 --- [main] c.d.solr.api.SpringSolrApplicationTests  : No active profile set, falling back to default profiles: default
-2021-07-25 00:20:29.069  INFO 19964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Solr repositories in DEFAULT mode.
-2021-07-25 00:20:29.256  INFO 19964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149ms. Found 1 Solr repository interfaces.
-2021-07-25 00:20:32.795  INFO 19964 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-07-25 00:20:33.414  INFO 19964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-25 00:20:35.006  INFO 19964 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-07-25 00:20:35.080  INFO 19964 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-07-25 00:20:35.154  INFO 19964 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-07-25 00:20:35.584  INFO 19964 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Started SpringSolrApplicationTests in 8.921 seconds (JVM running for 11.812)
-2021-07-25 00:20:36.064  INFO 19964 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-07-25 00:24:49.807  INFO 12872 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Starting SpringSolrApplicationTests on DESKTOP-MVAORKB with PID 12872 (started by Administrator in C:\Users\Administrator\Documents\DB-Github\solr-index-ui\spring-solr-email)
-2021-07-25 00:24:49.810 DEBUG 12872 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
-2021-07-25 00:24:49.810  INFO 12872 --- [main] c.d.solr.api.SpringSolrApplicationTests  : No active profile set, falling back to default profiles: default
-2021-07-25 00:24:51.504  INFO 12872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Solr repositories in DEFAULT mode.
-2021-07-25 00:24:51.676  INFO 12872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126ms. Found 1 Solr repository interfaces.
-2021-07-25 00:24:54.737  INFO 12872 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-07-25 00:24:55.456  INFO 12872 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-25 00:24:57.397  INFO 12872 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-07-25 00:24:57.497  INFO 12872 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-07-25 00:24:57.563  INFO 12872 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-07-25 00:24:57.909  INFO 12872 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Started SpringSolrApplicationTests in 8.672 seconds (JVM running for 11.862)
-2021-07-25 00:24:58.329  INFO 12872 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-07-25 00:27:37.272  INFO 20560 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Starting SpringSolrApplicationTests on DESKTOP-MVAORKB with PID 20560 (started by Administrator in C:\Users\Administrator\Documents\DB-Github\solr-index-ui\spring-solr-email)
-2021-07-25 00:27:37.274 DEBUG 20560 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
-2021-07-25 00:27:37.279  INFO 20560 --- [main] c.d.solr.api.SpringSolrApplicationTests  : No active profile set, falling back to default profiles: default
-2021-07-25 00:27:39.088  INFO 20560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Solr repositories in DEFAULT mode.
-2021-07-25 00:27:39.264  INFO 20560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 145ms. Found 1 Solr repository interfaces.
-2021-07-25 00:27:42.372  INFO 20560 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-07-25 00:27:43.028  INFO 20560 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-25 00:27:45.053  INFO 20560 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-07-25 00:27:45.116  INFO 20560 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-07-25 00:27:45.181  INFO 20560 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-07-25 00:27:45.623  INFO 20560 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Started SpringSolrApplicationTests in 9.003 seconds (JVM running for 12.331)
-2021-07-25 00:27:46.120  INFO 20560 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-07-25 00:29:14.495  INFO 22000 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Starting SpringSolrApplicationTests on DESKTOP-MVAORKB with PID 22000 (started by Administrator in C:\Users\Administrator\Documents\DB-Github\solr-index-ui\spring-solr-email)
-2021-07-25 00:29:14.497 DEBUG 22000 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
-2021-07-25 00:29:14.498  INFO 22000 --- [main] c.d.solr.api.SpringSolrApplicationTests  : No active profile set, falling back to default profiles: default
-2021-07-25 00:29:16.432  INFO 22000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Solr repositories in DEFAULT mode.
-2021-07-25 00:29:16.595  INFO 22000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125ms. Found 1 Solr repository interfaces.
-2021-07-25 00:29:19.758  INFO 22000 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-07-25 00:29:20.382  INFO 22000 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-25 00:29:22.072  INFO 22000 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-07-25 00:29:22.193  INFO 22000 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-07-25 00:29:22.375  INFO 22000 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-07-25 00:29:22.779  INFO 22000 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Started SpringSolrApplicationTests in 9.059 seconds (JVM running for 12.051)
-2021-07-25 00:29:23.228  INFO 22000 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-26 07:44:12.814  INFO 23276 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Starting SpringSolrApplicationTests on DESKTOP-MVAORKB with PID 23276 (started by Administrator in C:\Users\Administrator\Documents\DB-Github\solr-index-ui\spring-solr-email)
+2021-07-26 07:44:12.819 DEBUG 23276 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
+2021-07-26 07:44:12.824  INFO 23276 --- [main] c.d.solr.api.SpringSolrApplicationTests  : No active profile set, falling back to default profiles: default
+2021-07-26 07:44:14.873  INFO 23276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Solr repositories in DEFAULT mode.
+2021-07-26 07:44:15.059  INFO 23276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141ms. Found 1 Solr repository interfaces.
+2021-07-26 07:44:18.338  INFO 23276 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-07-26 07:44:19.108  INFO 23276 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-26 07:44:21.247  INFO 23276 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-07-26 07:44:21.321  INFO 23276 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-07-26 07:44:21.397  INFO 23276 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-07-26 07:44:21.791  INFO 23276 --- [main] c.d.solr.api.SpringSolrApplicationTests  : Started SpringSolrApplicationTests in 9.83 seconds (JVM running for 13.225)
+2021-07-26 07:44:22.302  INFO 23276 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

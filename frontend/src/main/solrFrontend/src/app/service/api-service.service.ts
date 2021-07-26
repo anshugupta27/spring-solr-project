@@ -49,8 +49,8 @@ getByDate(fromDate:any,toDate:any)
     }),
   };
   let params = new HttpParams()
-  .set('from', fromDate)
-  .set('to', toDate);
+  .set('fromDate', fromDate)
+  .set('toDate', toDate);
   return this.httpClient.get(`${this.backendRoute}/getByDateRange`,
   {params: params}
   );

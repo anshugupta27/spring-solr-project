@@ -142,7 +142,7 @@ unSortIcon="true"
         </div>
        
   </div>
-<div *ngFor="let email of emails"> <p class="card-title scroll"><span class="scrollText" [innerText]="messageBody">{{email.body}}</span></p></div>
+<div *ngFor="let email of emails"> <p class="card-title scroll"><span class="scrollText">{{email.body}}</span></p></div>
       </div>
 
 
@@ -165,7 +165,7 @@ unSortIcon="true"
               <b style="padding-left:7px;">Message :</b>
                 <div class="modal-body">
                 <div *ngFor="let email of emails">
-                <p class="card-text text-left" [innerText]="messageBody">{{email.body}}</p>
+                <p class="card-text text-left">{{email.body}}</p>
           </div>
        </div>
       </ng-template>
