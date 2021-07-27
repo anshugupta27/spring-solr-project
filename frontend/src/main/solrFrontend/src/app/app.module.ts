@@ -11,8 +11,9 @@ import { SinglePageComponent } from './components/single-page/single-page.compon
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
-import { MessageCardComponent } from './components/message-card/message-card.component';
-import { FilterComponent } from './components/filter/filter.component';
+import { DatePickerComponent } from './components/date-picker/date-picker.component';
+import { CustomTooltipComponent } from './components/custom-tooltip/custom-tooltip.component';
+import { MessageIdFilterComponent } from './components/message-id-filter/message-id-filter.component';
 
 
 
@@ -23,8 +24,9 @@ import { FilterComponent } from './components/filter/filter.component';
     HomeComponent,
     NavBarComponent,
     SinglePageComponent,
-    MessageCardComponent,
-    FilterComponent
+    DatePickerComponent,
+    CustomTooltipComponent,
+    MessageIdFilterComponent
   ],
   imports: [
     

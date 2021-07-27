@@ -1,38 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+import { NgbModal, NgbCalendar, NgbDateParserFormatter, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { Email } from 'src/app/email';
 import { ApiServiceService } from 'src/app/service/api-service.service';
-import {HttpClient, HttpClientModule, HttpHeaders} from '@angular/common/http' ;
-import {Email} from 'src/app/email' ;
-import {NgbDate, NgbCalendar, NgbDateParserFormatter, NgbCalendarPersian, NgbInputDatepickerConfig} from '@ng-bootstrap/ng-bootstrap';
-import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
-import { IDropdownSettings } from 'ng-multiselect-dropdown';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { Placeholder } from '@angular/compiler/src/i18n/i18n_ast';
-import { TooltipComponent } from 'ag-grid-community/dist/lib/components/framework/componentTypes';
-import { DatePickerComponent } from '../date-picker/date-picker.component';
-import { MessageIdFilterComponent } from '../message-id-filter/message-id-filter.component';
+
+
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-message-id-filter',
+  templateUrl: './message-id-filter.component.html',
+  styleUrls: ['./message-id-filter.component.css']
 })
-export class HomeComponent implements OnInit {
+export class MessageIdFilterComponent implements OnInit {
 
-
-  constructor(private apiService:ApiServiceService,
-    private httpClient: HttpClient,
-    private modalService: NgbModal,
-    private fb: FormBuilder,
-    private calendar: NgbCalendar,
-    public formatter: NgbDateParserFormatter,
-    public config: NgbInputDatepickerConfig) 
-    { 
-       // date
-    this.fromDate = null;
-    this.toDate = null;
-    config.placement = ['top-left', 'bottom-right'];
-    }
-
+  constructor(private apiService:ApiServiceService , private httpClient: HttpClient,
+    
+    private modalService: NgbModal ,  private fb: FormBuilder,
+    private calendar: NgbCalendar, public formatter: NgbDateParserFormatter) {
+     
+     
+     }
 
 // modal
 openLg(content:any) {
@@ -93,21 +82,28 @@ dropdownSettingsFrom = {};
   public messageFlag = false ;
 
 
-
   //drop down Message ID - selected 
   onItemSelectID(item: any) {
     this.fromFlag = false ; 
     this.messageFlag = true ;
+
+    // const message = JSON.stringify(item) ;
+   
     for ( let i = 0 + (this.pageCount*100) ; i < 100+(this.pageCount*100);i++)
     {
+      
       if ( this.fixedRowData[i].id == item )
       this.getByMessageIDList.push(this.fixedRowData[i]) ;
     }
 
+    
+   
   }
 
   // drop down Message ID - DeSelected
-  onItemDeSelectID(item:any) {
+  onItemDeSelectID(item:any)
+  {
+   
     for ( let [i , list] of this.getByMessageIDList.entries())
     {
       if ( list.id == item )
@@ -118,9 +114,11 @@ dropdownSettingsFrom = {};
 
   // drop down Message ID - Select All
   onSelectAllID(items: any) {
-    this.getByMessageIDList= this.fixedRowData ; 
+    // this.apiService.getAllDocuments(1000,0).subscribe((res) => {
+
+      this.getByMessageIDList= this.fixedRowData ; 
       this.messageFlag = true ; 
-   
+    // })
   }
   
 
@@ -131,21 +129,31 @@ dropdownSettingsFrom = {};
    onItemSelectFrom(item: any) {
     this.fromFlag = true ; 
     this.messageFlag = false ;
+     
+
      for ( let i = 0 + (this.pageCount*100) ; i < 100+(this.pageCount*100);i++)
      {
+     
+
        if ( item == this.fixedRowData[i].from)
       this.getByFromList.push(this.fixedRowData[i]) ;
      }
+
+    
    }
 
    // drop down From - Select All
    onSelectAllFrom(items: any) {
-     this.getByFromList= this.fixedRowData ; 
+    // this.apiService.getAllDocuments(1000,0).subscribe((res) => {
+
+      this.getByFromList= this.fixedRowData ; 
       this.fromFlag = true ; 
+    // })
   }
 
   // drop down From - DeSelected
-  onItemDeSelectFrom(item:any) {
+  onItemDeSelectFrom(item:any)
+  {
     for ( let [i , list] of this.getByFromList.entries())
     {
       if ( list.from == item )
@@ -154,88 +162,30 @@ dropdownSettingsFrom = {};
   }
 
 
-  // date range picker
-  public isHidden:Boolean = false;
-  public pageCount:any;
-  public filterApplied: boolean=false;
-  hoveredDate: NgbDate | null = null;
-
-  fromDate: NgbDate | null;
-  toDate: NgbDate | null;
-
   // form submit 
 filterForm = this.fb.group({
   formMessageID: [''],
-  formFrom: [''],
-  sentDate: ['']  
+  formFrom: ['']
  
 });
 
-
-formatDate(sentDate:any) {
-  var date: String = ""
-    date += (Math.floor(sentDate.day/10) == 0 ? "0" +sentDate.day + "-" : "" + sentDate.day + "-");
-    date += (Math.floor(sentDate.month/10) == 0 ? "0" + sentDate.month + "-" : "" + sentDate.month + "-");
-    date += sentDate.year;
-    return date;
-}
-
-onDateSelection(date: NgbDate) {
-  
-  if (!this.fromDate && !this.toDate) {
-    this.fromDate = date;
-  } else if (this.fromDate && !this.toDate && date && date.after(this.fromDate)) {
-    this.toDate = date;
-  } else {
-    this.toDate = null;
-    this.fromDate = date;
-  }
-
- 
-  
-}
-
-isHovered(date: NgbDate) {
-  return this.fromDate && !this.toDate && this.hoveredDate && date.after(this.fromDate) && date.before(this.hoveredDate);
-}
-
-isInside(date: NgbDate) {
-  return this.toDate && date.after(this.fromDate) && date.before(this.toDate);
-}
-
-isRange(date: NgbDate) {
-  return date.equals(this.fromDate) || (this.toDate && date.equals(this.toDate)) || this.isInside(date) || this.isHovered(date);
-}
-
-validateInput(currentValue: NgbDate | null, input: string): NgbDate | null {
-  const parsed = this.formatter.parse(input);
-  return parsed && this.calendar.isValid(NgbDate.from(parsed)) ? NgbDate.from(parsed) : currentValue;
-}
-
-public space :string=" TO " ;
-
-
+pageCount:any;
 // on Form Submit
 onSubmit() {
  
-  if(this.fromFlag && this.filterForm.value.formFrom ) {
+  this.filterApplied=true;
+  if(this.fromFlag && this.filterForm.value.formFrom ){
     this.rowData = this.getByFromList ;
+    console.log("from list: " + this.getByFromList);
     this.filterForm.value.formFrom="";
   }
-  else if ( this.messageFlag && this.filterForm.value.formMessageID ) {
-    this.rowData = this.getByMessageIDList ;
+  else if ( this.messageFlag && this.filterForm.value.formMessageID )
+  {
    
-  }
-  else  if (this.fromDate != null && this.toDate != null) {
-    let dateList: any=[]
-    var fromDate = this.formatDate(this.fromDate);
-    var toDate = this.formatDate(this.toDate);
-
-    // server side 
-    this.apiService.getByDate(fromDate,toDate).subscribe((res) => {
-      this.rowData = res ; 
-      
-    })
+    console.log(this.getByMessageIDList);
+    this.rowData = this.getByMessageIDList ;
+    console.log(this.rowData);
+ 
   }
   else
   this.rowData = null ;
@@ -247,18 +197,23 @@ onSubmit() {
 // Reset 
 public selectedItemMessage:any ;
 public selecedItemFrom:any;
-public dateRangePicker:any;
+
 resetButton(){
-  this.selectedItemMessage=[] ;
+  this.selectedItemMessage= [] ;
   this.selecedItemFrom=[];
   this.getByFromList=[];
   this.getByMessageIDList=[];
   this.filterForm.reset;
-  this.rowData=this.fixedRowData;
-  this.dateRangePicker = "" ;
+  this.filterApplied=false ;
+  this.getAllDocuments() ;
+ 
 }
  
 
+ 
+ 
+ customToolTip = "date+id"
+ 
 
 columnDefs = [
    
@@ -267,9 +222,11 @@ columnDefs = [
   ,sortable :true , filter : true , resizable : false,checkboxSelection:true,width:300},
   {headerName:'FROM',field:'from',headerClass: {textAlign: 'center'}, sortable :true , filter : true , resizable : false,tooltipField:"from",width:250},
   {headerName:'SUBJECT',field:'subject', sortable :true , filter : true , resizable : true,tooltipField:"subject",width:250},
+
   {headerName: 'DATE', field:'date',sortable :true , filter : true, resizable : true,tooltipField:"date",width:160},
   {headerName:'TO',field:'to',sortable :true , filter : true , resizable : true,tooltipField:"to"},
   {headerName:'CC',field:'cc', sortable :true , filter : true , resizable : true,tooltipField:"cc"},
+  
   {headerName: 'MESSAGE', field:'body',sortable :true , filter : true , resizable : true,tooltipField:"body"},
   {headerName:'CONTENT TYPE',field:'contentType', sortable :true, filter : true , resizable : true,tooltipField:"contentType"},
   {headerName: 'ID', field: 'messageId',sortable :true , filter : true  , resizable : true,tooltipField:"id"},
@@ -277,11 +234,11 @@ columnDefs = [
 
 ];
 
-
-// Pagination
-
+filterApplied:boolean=false;
 onPaginationChanged(event:any)
 {
+  console.log("page count"+this.pageCount);
+console.log("event "+event);
   this.pageCount = event.api.selectionController.gridApi.paginationProxy.currentPage;
   let tempSet = new Set()
   this.messageID =[];
@@ -289,6 +246,8 @@ onPaginationChanged(event:any)
   this.dropdownListFrom=[];
   this.fromIDarray=[];
   
+  console.log(this.pageCount);
+
   for ( let i = 0 + (this.pageCount*100) ; i < 100+(this.pageCount*100);i++)
   {
     var id = this.fixedRowData[i].id;
@@ -296,13 +255,15 @@ onPaginationChanged(event:any)
     tempSet.add(this.fixedRowData[i].from);
   }
 
+  this.dropdownListMessage = this.messageID;
+
   for ( let key of tempSet )
   {
     this.fromIDarray.push(key);
   }
-  
-  this.dropdownListMessage = this.messageID;
   this.dropdownListFrom = this.fromIDarray;
+ 
+  
 }
 
 
@@ -315,10 +276,11 @@ onPaginationChanged(event:any)
   public uniqueFrom:any = [];
 
   // get All Documents
-  public getAllDocuments(){
+public getAllDocuments(){
   this.apiService.getAllDocuments(5000,0).subscribe((res) => {
     this.rowData = res ; 
     this.fixedRowData = res ; 
+
   })
 }
 
@@ -326,21 +288,15 @@ onPaginationChanged(event:any)
 public emails!: Email[];
 public messageBody:any;
 
-// on Row click
+// on row click
 public onRowClicked(event:any){
   this.apiService.getDocumentById(event.data.id).subscribe((data:Email[]) => {  
     this.emails = data ;
+
     this.apiService.setMessage(this.emails) ;
 
-    // cleaning Message body
-    this.messageBody=this.cleanMessageBody(data) ;
-  })
-
-}
-
-cleanMessageBody(data:any)
-{
-  const index1 = data[0].body.lastIndexOf("Subject:");
+    // cleaning message body
+    const index1 = data[0].body.lastIndexOf("Subject:");
     if ( index1 == -1 )
     this.messageBody = data[0].body;
     else{
@@ -348,7 +304,14 @@ cleanMessageBody(data:any)
      this.messageBody = data[0].body.substring(index2) ;
     }
     this.messageBody = this.messageBody.replace(/^\s+|\s+$/g,'');
-    return this.messageBody;
+    
+   
+  })
+ 
 }
+
+
+
+  
 
 }

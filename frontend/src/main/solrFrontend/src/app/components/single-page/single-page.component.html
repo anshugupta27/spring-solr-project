@@ -1,85 +1,94 @@
 <div *ngIf="!emails; else elseBlock">oops Select a row then try again !!</div>
 <ng-template #elseBlock>
-  <div class="colored-section body" id="title">
-    <div class="card overflow-auto" style="width: 50rem;">
+<div class="colored-section body" id="title">
+<div class="card overflow-auto" style="width: 50rem;">
 
 
-      <!-- Message ID -->
-      <div class="card-header head" *ngFor="let email of emails">
-        <p><b>MESSAGE ID :</b>{{email.id}}</p>
-      </div>
+    <!-- Message ID -->
+    <div class="card-header head" *ngFor="let email of emails">
+        <p><b>MESSAGE ID :</b>{{email.id}}</p> 
+    </div>
 
-      <div class="card-body card-title text-left" *ngFor="let email of emails">
+    
+    
+    <div class="card-body card-title text-left" *ngFor="let email of emails">
+        
         <button routerLink="/" type="button" class="btn btn-danger">close</button>
 
-        <!-- Subject -->
-        <div *ngIf="email.subject">
-          <p class="card-title text-left">
-            <mark> <b>SUBJECT : </b> {{ email.subject }}</mark>
-          </p>
-        </div>
 
-        <!--Sent Date  -->
-        <p><b>SENT DATE : </b> {{email.date}}</p>
-
-
-        <!-- From -->
-        <p><b>FROM : </b> {{email.from}}</p>
-
-
-        <!-- to -->
-        <div *ngIf="email.to">
-          <p [ngClass]="{'limitTextHeight': isReadMoreto}">
-            <b>TO : </b> {{email.to}}
-          </p>
-
-          <div *ngIf="email.to.length>50;">
-            <b class="clickme" (click)="showto()">{{ isReadMoreto ? '...Read More': 'Read Less' }}</b>
-          </div>
-        </div>
-
-
-        <!-- CC -->
-        <div *ngIf="email.cc">
-          <p [ngClass]="{'limitTextHeight': isReadMorecc}">
-            <b>CC : </b> {{ email.cc }}
-          </p>
-
-          <div *ngIf="email.cc.length>50">
-            <b class="clickme" (click)="showcc()">{{ isReadMorecc ? '...Read More': 'Read Less' }}</b>
-          </div>
-        </div>
-
-
-        <!-- text -->
-        <div *ngIf="email.body">
-          <b>MESSAGE : </b>
-          <p [ngClass]="{'limitTextHeight': isReadMoretext}" class="card-text text-left" [innerText]="emailBody">
-
-          <div *ngIf="email.body.length>50;">
-            <b class="clickme" (click)="showText()">{{ isReadMoretext ? '...Read More': 'Read Less' }}</b>
-          </div>
-        </div>
-
-
-        <!--content type  -->
-        <div *ngIf="email.contentType">
-          <p [ngClass]="{'limitTextHeight': isReadMorecontent}">
-            <b>CONTENT :</b> {{ email.contentType }}
-          </p>
-
-          <div *ngIf="email.contentType.length>100;">
-            <b class="clickme" (click)="showcontent()">{{ isReadMorecontent ? '...Read More': 'Read Less' }}</b>
-          </div>
-        </div>
-
-
-
+         <!-- Subject -->
+       <div *ngIf="email.subject">
+        <p class="card-title text-left"> 
+           <mark> <b>SUBJECT : </b> {{  email.subject }}</mark></p>
       </div>
+
+      <!--Sent Date  -->
+      <p><b>SENT DATE : </b> {{email.date}}</p>
+     
+     
+     
+     
+      <!-- From -->
+      
+      <p><b>FROM : </b> {{email.from}}</p>
+      
+
+      <!-- to -->
+      
+      <div *ngIf="email.to">  
+      <p [ngClass]="{'limitTextHeight': isReadMoreto}" > 
+        <b>TO : </b> {{email.to}}</p>
+          
+      <div *ngIf="email.to.length>50;">
+         <b class="clickme" (click)="showto()">{{ isReadMoreto ? '...Read More': 'Read Less' }}</b>
+       </div>
+     </div>
+      
+
+      <!-- CC -->
+
+      <div *ngIf="email.cc">
+      <p [ngClass]="{'limitTextHeight': isReadMorecc}" > 
+        <b>CC : </b>  {{ email.cc }} </p>
+
+       <div *ngIf="email.cc.length>50">
+           <b class="clickme" (click)="showcc()">{{ isReadMorecc ? '...Read More': 'Read Less' }}</b>
+        </div>
+    </div>
+
+     
+
+  
+     <!-- text -->
+
+     <div *ngIf="email.body">
+        <b>MESSAGE : </b><p [ngClass]="{'limitTextHeight': isReadMoretext}" class="card-text text-left">
+     {{email.body}}
+     <div *ngIf="email.body.length>50;">
+         <b class="clickme" (click)="showText()">{{ isReadMoretext ? '...Read More': 'Read Less' }}</b>
+     </div>
+  </div>
+     
+        
+  
+     <!--content type  -->
+
+    <div *ngIf="email.contentType">
+      <p [ngClass]="{'limitTextHeight': isReadMorecontent}" > 
+         <b>CONTENT :</b>  {{ email.contentType }} </p>
+
+     <div *ngIf="email.contentType.length>100;">
+           <b class="clickme" (click)="showcontent()">{{ isReadMorecontent ? '...Read More': 'Read Less' }}</b>
+       </div>
     </div>
 
 
-
+       
+    </div>
   </div>
+
+  
+
+</div>
 
 </ng-template>

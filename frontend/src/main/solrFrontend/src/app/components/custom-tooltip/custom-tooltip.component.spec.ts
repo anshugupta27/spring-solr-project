@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MessageCardComponent } from './message-card.component';
+import { CustomTooltipComponent } from './custom-tooltip.component';
 
-describe('MessageCardComponent', () => {
-  let component: MessageCardComponent;
-  let fixture: ComponentFixture<MessageCardComponent>;
+describe('CustomTooltipComponent', () => {
+  let component: CustomTooltipComponent;
+  let fixture: ComponentFixture<CustomTooltipComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MessageCardComponent ]
+      declarations: [ CustomTooltipComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MessageCardComponent);
+    fixture = TestBed.createComponent(CustomTooltipComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

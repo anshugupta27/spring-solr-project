@@ -1,0 +1,20 @@
+/* multi select drop down */
+::ng-deep .multiselect-dropdown .dropdown-btn .selected-item {
+    max-height: 25px !important; 
+  } 
+
+
+  /* message drop down */
+.message{
+    margin-left:100px;
+    margin-top:20px;
+    margin-bottom:20px;
+    width:230px;
+  }
+  
+  .dropbuttmessage{
+    width:200px;
+    padding-right:100px;
+    margin-left:40px;
+  }
+  
