@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class ApiServiceService {
 
   constructor(private httpClient: HttpClient) { }
-   public backendRoute = 'http://localhost:9090/spring-solr-email-0.0.1-SNAPSHOT/api/v1' ;
+   public backendRoute = '/spring-solr-email-0.0.1-SNAPSHOT/api/v1' ;
    public message!:Email[] ;
 
   setMessage ( emails:any )
