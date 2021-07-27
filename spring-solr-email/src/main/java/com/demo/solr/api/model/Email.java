@@ -8,21 +8,13 @@ package com.demo.solr.api.model;
 import org.apache.solr.client.solrj.beans.Field;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.solr.core.mapping.SolrDocument;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 
-@Data
+
 @Getter
 @Setter
-@ToString
-@AllArgsConstructor
-@NoArgsConstructor
 @SolrDocument(collection = "dataset") // name of solr core (dataset) 
 public class Email {	
 	
@@ -48,6 +40,5 @@ public class Email {
 	private String messageId;
 	@Field
 	private String body;
-	
-	
+
 }

@@ -7,8 +7,6 @@ package com.demo.solr.api.services;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.ListIterator;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -73,13 +71,19 @@ public class ServicesImplemetation implements emailServices {
 	 */
 	
 	@Override
-	public List<Email> getByFrom(String from, int limit, int offset) throws ResourceNotFoundException {
-		Pageable pageable = new OffsetBasedPageRequest(limit, offset);
-		List<Email> Emails = repository.findAllByFrom(from, pageable);
-		if ( Emails.isEmpty() ) 
-			throw new ResourceNotFoundException ( from ) ;
+	public List<Email> getByFrom(String from) throws ResourceNotFoundException {
+		
+		List<Email> Emails = repository.findAllByFrom(from);
+		try {
+			if ( Emails.isEmpty() ) {
+				throw new ResourceNotFoundException (from) ;
+			}
+		}
+		catch(Exception e) {}
 		return  Emails;
 	}
+	
+
 	
 	/**
 	 * @param messageId is the messageId
@@ -89,14 +93,17 @@ public class ServicesImplemetation implements emailServices {
 	
 	@Override
 	public List<Email> getByMessageId(String messageId) throws ResourceNotFoundException {
-//		Email email = null ;
 		List<Email> Emails = repository.findAllByMessageId(messageId);
 		
-		if ( Emails.isEmpty() )
-			throw new ResourceNotFoundException (messageId) ;
-//		email = Emails.get(0) ;
+		try {
+			if ( Emails.isEmpty() ) {
+				throw new ResourceNotFoundException (messageId) ;
+			}
+		}
+		catch(Exception e) {}
 		return Emails ;
 	}
+	
 	
 	
 	/**
@@ -120,56 +127,56 @@ public class ServicesImplemetation implements emailServices {
 	/**
 	 * @param to
 	 * @return Email list of the particular receiver
-	 * @throws ResourceNotFoundException 
+	 * 
 	 */
 
 	@Override
-	public List<Email> getByTo(String to) throws ResourceNotFoundException {
+	public List<Email> getByTo(String to)  throws ResourceNotFoundException {
 		List<Email> Emails = (List<Email>)repository.findAllByTo(to);
-		if ( Emails.isEmpty())
-			throw new ResourceNotFoundException(to) ;
+		try {
+			if ( Emails.isEmpty() ) {
+				throw new ResourceNotFoundException (to) ;
+			}
+		}
+		catch(Exception e) {}
 		return Emails ; 
 	}
+	
+	
 	
 	/**
 	 * @param cc
 	 * @return Email list of the particular receiver in CC
-	 * @throws ResourceNotFoundException 
+	 * 
 	 */
 	
 	@Override
-	public List<Email> getByCC(String cc) throws ResourceNotFoundException {
+	public List<Email> getByCC(String cc) {
 		List<Email> Emails = (List<Email>)repository.findAllByCC(cc);
-		if ( Emails.isEmpty())
-			throw new ResourceNotFoundException(cc) ;
 		return Emails ;
 	}
 	
 	/**
 	 * @param bcc
 	 * @return Email list of the particular receiver in BCC
-	 * @throws ResourceNotFoundException
+	 * 
 	 */
 	
 	@Override
-	public List<Email> getByBCC(String bcc) throws ResourceNotFoundException {
+	public List<Email> getByBCC(String bcc) {
 		List<Email> Emails = (List<Email>)repository.findAllByBCC(bcc);
-		if ( Emails.isEmpty())
-			throw new ResourceNotFoundException(bcc) ;
 		return Emails ;
 	}
 	
 	/**
 	 * @param subject
 	 * @return Email list with particular list
-	 * @throws ResourceNotFoundException
+	 * 
 	 */
 	
 	@Override
-	public List<Email> getBySubject(String subject) throws ResourceNotFoundException {
+	public List<Email> getBySubject(String subject) {
 		List<Email> Emails = (List<Email>)repository.findAllBySubject(subject);
-		if ( Emails.isEmpty())
-			throw new ResourceNotFoundException(subject) ;
 		return Emails ;
 	}
 	
@@ -180,45 +187,30 @@ public class ServicesImplemetation implements emailServices {
 	 */
 	
 	@Override
-	public List<Email> getByContentType(String contentType) throws ResourceNotFoundException {
+	public List<Email> getByContentType(String contentType) {
 		List<Email> Emails = (List<Email>)repository.findAllByContentType(contentType);
-		if ( Emails.isEmpty())
-			throw new ResourceNotFoundException(contentType) ;
 		return Emails ;
 	}
 	
-	/**
-	 * @param mimeVersion
-	 * @return Email list containing particular Mime Version
-	 * @throws ResourceNotFoundException 
-	 */
 	
-	@Override
-	public List<Email> getByMimeVersion(String mimeVersion) throws ResourceNotFoundException {
-		List<Email> Emails = (List<Email>)repository.findAllByMimeVersion(mimeVersion);
-		if ( Emails.isEmpty())
-			throw new ResourceNotFoundException(mimeVersion) ;
-		return Emails ;
-	}
 	
 	/**
 	 * @param body
 	 * @return Email list containing particular text
-	 * @throws ResourceNotFoundException 
+	 * 
 	 */
 	
 	@Override
-	public List<Email> getByBody(String body) throws ResourceNotFoundException {
+	public List<Email> getByBody(String body) {
 		List<Email> Emails = (List<Email>)repository.findAllByBody(body);
-		if( Emails.isEmpty())
-			throw new ResourceNotFoundException(body) ;
 		return Emails ;
 	}
 	
 
-	
-
-	
+    /**
+     * @param fromData, toDate
+     * @return list of emails with particular date range
+     */
 	
 	@Override
 	public List<Email> getByDateRange(String fromDate, String toDate) {
@@ -229,15 +221,15 @@ public class ServicesImplemetation implements emailServices {
 		{
 			System.out.println(date);
 		}
-		List<Email> Messages = new ArrayList<>();
+		List<Email> Emails = new ArrayList<>();
 		int limit = 10;
 		int offset = 0;
 		Pageable pageable = new OffsetBasedPageRequest(limit, offset);
 		for(String date: dateList) {
 			List<Email> tempDateList = repository.findAllByDate(date, pageable);
-			Messages.addAll(tempDateList);
+			Emails.addAll(tempDateList);
 		}
-		return Messages;
+		return Emails;
 	}
 	
 

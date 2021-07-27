@@ -2,8 +2,8 @@ package com.demo.solr.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
-
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
@@ -14,12 +14,13 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2
-public class SpringSolrApplication {
+public class SpringSolrApplication extends SpringBootServletInitializer{
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringSolrApplication.class, args);
 	}
 	
+	@SuppressWarnings("deprecation")
 	private ApiInfo apiDetails(){
 		return new ApiInfo(
 				"DB Data Solr Index UI API",

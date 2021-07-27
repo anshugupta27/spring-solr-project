@@ -18,18 +18,17 @@ public interface emailServices {
 
 	String countAll();
 	List<Email> getByDate(String date , int limit, int offset) throws ResourceNotFoundException ;
-	List<Email> getByFrom(String from, int limit, int offset) throws ResourceNotFoundException;
-	List<Email> getByTo(String to) throws ResourceNotFoundException;
-	List<Email> getByCC(String cc) throws ResourceNotFoundException;
-	List<Email> getByBCC(String bcc) throws ResourceNotFoundException;
-	List<Email> getBySubject(String subject) throws ResourceNotFoundException;
-	List<Email> getByContentType(String contentType) throws ResourceNotFoundException;
-	List<Email> getByMimeVersion(String mimeVersion) throws ResourceNotFoundException;
+	List<Email> getByFrom(String from) throws ResourceNotFoundException;
+	List<Email> getByTo(String to) throws ResourceNotFoundException ;
+	List<Email> getByCC(String cc) ;
+	List<Email> getByBCC(String bcc) ;
+	List<Email> getBySubject(String subject) ;
+	List<Email> getByContentType(String contentType) ;
 	List<Email> getByMessageId(String messageId) throws ResourceNotFoundException;
-	List<Email> getByBody(String text) throws ResourceNotFoundException;
+	List<Email> getByBody(String text) ;
 	List<Email> getAllEmails(int limit, int offset) throws ResourceNotFoundException;
 	List<Email> getById (String id) throws ResourceNotFoundException;
-	List<Email> getByDateRange(String fromDate, String toDate) throws ResourceNotFoundException;
+	List<Email> getByDateRange(String fromDate, String toDate) ;
 
 	
 }

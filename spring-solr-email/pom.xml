@@ -37,6 +37,8 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
@@ -116,6 +118,13 @@
 						</goals>
 					</execution>
 				</executions>
+				<configuration>
+					<excludes>
+						<exclude>com/demo/solr/api/exception/*.class</exclude>
+						<exclude>com/demo/solr/api/controller/*.class</exclude>
+						<exclude>com/demo/solr/api/propertyValues/*.class</exclude>
+					</excludes>
+				</configuration>
 			</plugin>
 		
 			<plugin>

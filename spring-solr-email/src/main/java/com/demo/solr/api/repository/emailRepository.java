@@ -20,7 +20,7 @@ public interface emailRepository extends SolrCrudRepository<Email, String> {
 	@Query("date:?0")
 	List<Email> findAllByDate(String date, Pageable pageable);
 	@Query("from:?0")
-	List<Email> findAllByFrom(String from, Pageable pageable);
+	List<Email> findAllByFrom(String from);
 	@Query("to:?0")
 	Iterable<Email> findAllByTo(String to);
 	@Query("cc:?0")
@@ -31,8 +31,6 @@ public interface emailRepository extends SolrCrudRepository<Email, String> {
 	Iterable<Email> findAllByContentType(String contentType);
 	@Query("subject:?0")
 	Iterable<Email> findAllBySubject(String subject);
-	@Query("mimeVersion:?0")
-	Iterable<Email> findAllByMimeVersion(String mimeVersion);
 	@Query("messageId:?0")
 	List<Email> findAllByMessageId(String messageId);
 	@Query("body:?0")

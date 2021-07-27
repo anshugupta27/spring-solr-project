@@ -5,19 +5,17 @@
 
 package com.demo.solr.api.controller;
 
+import java.text.ParseException;
 import java.util.List;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.demo.solr.api.exception.ResourceNotFoundException;
 import com.demo.solr.api.model.Email;
 import com.demo.solr.api.propertyValues.PropertyValues;
@@ -30,21 +28,16 @@ public class emailController {
 	private final Logger logger = LoggerFactory.getLogger(this.getClass()) ;
 	@Autowired
 	emailServices emailServices;
-	
 	@Autowired
 	PropertyValues propertyValues ;
+	
+	
 	/**
 	 * @GetMapping annotated methods to handle the HTTP GET request 
 	 * and matched with the given URL expression
 	 */
 	
-	
-	@GetMapping("/")
-	public ResponseEntity <String> homePage() {
-		logger.debug("home page");
-		return new ResponseEntity<String>("you are on the home page",HttpStatus.ACCEPTED) ;
-		
-	}
+
 	
 	/**
 	 * @path /api/v1/getAll
@@ -83,7 +76,7 @@ public class emailController {
      * @throws ResourceNotFoundException
      */
 	@GetMapping("/api/v1/getByDateRange")
-	public ResponseEntity <List<Email>> getEmailsDateRange(@RequestParam String fromDate, @RequestParam String toDate) throws ResourceNotFoundException {
+	public ResponseEntity <List<Email>> getEmailsDateRange(@RequestParam String fromDate, @RequestParam String toDate) throws ParseException {
 		logger.debug("Gell By Date Range called");
 		List<Email> emailResponse = emailServices.getByDateRange(fromDate, toDate) ;
 		return new ResponseEntity<List<Email>> ( emailResponse, HttpStatus.ACCEPTED);
@@ -99,9 +92,7 @@ public class emailController {
 	@GetMapping("/api/v1/getFrom/{from}")
 	public ResponseEntity <List<Email>> getEmailsFrom(@PathVariable String from) throws ResourceNotFoundException  {
 		logger.debug("get From API call");
-		int limit = propertyValues.getLimit();
-		int offset = propertyValues.getOffset();
-		List<Email> emailResponse = emailServices.getByFrom(from,limit,offset) ;
+		List<Email> emailResponse = emailServices.getByFrom(from) ;
 		return new ResponseEntity <List<Email>> (emailResponse,HttpStatus.ACCEPTED) ;
 					
 		 
@@ -111,7 +102,8 @@ public class emailController {
 	 * @path /api/v1/getTo/<to>
 	 * @param to
 	 * @return List of Email of particular receiver
-	 * @throws ResourceNotFoundException
+	 * @throws ResourceNotFoundException 
+	 * 
 	 */
 	
 	@GetMapping("/api/v1/getTo/{to}")
@@ -139,11 +131,11 @@ public class emailController {
 	 * @path /api/v1/getCC/<cc>
 	 * @param CC
 	 * @return List of Email of particular CC
-	 * @throws ResourceNotFoundException
+	 * 
 	 */
 	
 	@GetMapping("/api/v1/getCC/{cc}")
-	public ResponseEntity <List<Email>> getEmailsCC(@PathVariable String cc) throws ResourceNotFoundException {
+	public ResponseEntity <List<Email>> getEmailsCC(@PathVariable String cc) {
 		logger.debug("get CC API call");
 		List<Email> emailResponse = emailServices.getByCC(cc) ;
 		return new ResponseEntity <List<Email>> (emailResponse,HttpStatus.ACCEPTED);
@@ -153,11 +145,11 @@ public class emailController {
 	 * @path /api/v1/getBCC/<bcc>
 	 * @param bcc
 	 * @return 
-	 * @throws ResourceNotFoundException
+	 * 
 	 */
 	
 	@GetMapping("/api/v1/getBCC/{bcc}")
-	public ResponseEntity <List<Email>> getEmailsBCC(@PathVariable String bcc) throws ResourceNotFoundException {
+	public ResponseEntity <List<Email>> getEmailsBCC(@PathVariable String bcc) {
 		logger.debug("get BCC API call");
 		List<Email> emailResponse = emailServices.getByBCC(bcc) ;
 		return new ResponseEntity <List<Email>> (emailResponse,HttpStatus.ACCEPTED);
@@ -167,11 +159,11 @@ public class emailController {
 	 * @path /api/v1/getSubject/<subject>
 	 * @param subject
 	 * @return
-	 * @throws ResourceNotFoundException
+	 * 
 	 */
 	
 	@GetMapping("/api/v1/getSubject/{subject}")
-	public ResponseEntity <List<Email>> getEmailsSubject(@PathVariable String subject) throws ResourceNotFoundException {
+	public ResponseEntity <List<Email>> getEmailsSubject(@PathVariable String subject) {
 		logger.debug("get subject API call");
 		List<Email> emailResponse = emailServices.getBySubject(subject) ;
 		return new ResponseEntity <List<Email>> (emailResponse,HttpStatus.ACCEPTED);
@@ -185,25 +177,12 @@ public class emailController {
 	 */
 	
 	@GetMapping("/api/v1/getContentType/{contentType}")
-	public ResponseEntity <List<Email>> getEmailsContentType(@PathVariable String contentType) throws ResourceNotFoundException {
+	public ResponseEntity <List<Email>> getEmailsContentType(@PathVariable String contentType)  {
 		logger.debug("get Content Type API call");
 		List<Email> emailResponse = emailServices.getByContentType(contentType) ;
 		return new ResponseEntity <List<Email>> ( emailResponse,HttpStatus.ACCEPTED);	 
 	}
 	
-	/**
-	 * @path /api/v1/getMimeVersion/<mimeVersion>
-	 * @param mimeVersion
-	 * @return List of Email matching a particular Mime Version
-	 * @throws ResourceNotFoundException
-	 */
-	
-	@GetMapping("/api/v1/getMimeVersion/{mimeVersion}")
-	public ResponseEntity <List<Email>> getEmailsMimeVersion(@PathVariable String mimeVersion) throws ResourceNotFoundException {
-		logger.debug("get Mime Version API call");
-		List<Email> emailResponse = emailServices.getByMimeVersion(mimeVersion) ;
-		return new ResponseEntity <List<Email>> (emailResponse,HttpStatus.ACCEPTED);
-	}
 	
 	/**
 	 * @path /api/v1/getMessageId/<messageId>
@@ -227,13 +206,14 @@ public class emailController {
 	 */
 	
 	@GetMapping("/api/v1/getBody/{body}")
-	public ResponseEntity <List<Email>> getEmailsBody(@PathVariable String body) throws ResourceNotFoundException {
+	public ResponseEntity <List<Email>> getEmailsBody(@PathVariable String body) {
 		logger.debug("get Text API call");
 		List<Email> emailResponse = emailServices.getByBody(body) ;
 		return new ResponseEntity <List<Email>> (emailResponse,HttpStatus.ACCEPTED);
 	}
 	
 	/**
+	 * 
 	 * @return count of all the Email
 	 */
 	
