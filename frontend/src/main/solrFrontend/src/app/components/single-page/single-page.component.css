@@ -1,5 +1,4 @@
 /* close button */
-
 .btn{
     margin-left:700px;
 }
@@ -30,13 +29,12 @@
 }
 
 
-  /* font */
-  
-  b{
+/* font */
+b{
     color:black;
     font-family: Arial;
   }
-  p{
+p{
     font-family: Arial;
     font-weight: 900px;
   }
@@ -47,13 +45,10 @@
     font-style:arial;
 }
 
-/* body */
 .colored-section{
     margin-top:0px;
     padding-top:10px;
     padding-left:-900px;
     padding-bottom:100px;
     font-style: arial;
-    /* background-color: #EEEEEE; */
-    
   }

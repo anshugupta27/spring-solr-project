@@ -1,0 +1,58 @@
+<div class="cardsingle" style="font-family: Arial;">
+    <div class="card overflow-auto cardbody" style="width: 72.2rem;">
+
+        <div class="card-header head" *ngFor="let email of emails">
+            <button routerLink="/singleMail" class="btn single">open in new page</button>
+            <button class="btn buttopenhere" (click)="openLg(content)">open message here</button>
+            <div class="cardContent text-left">
+
+                <span class="col-md-10">
+                    <p class="card-text"> <mark><b>SUBJECT :</b> {{ email.subject}}</mark></p>
+                </span>
+                <span class="col-md-10">
+                    <p class="card-text"> <b>MESSAGE ID :</b> {{ email.id}}</p>
+                </span>
+
+
+                <div class="row">
+                    <span class="col-md-4">
+                        <p class="card-text"> <b>FROM :</b> {{email.from}}</p>
+                    </span>
+                    <span class="col-md-4">
+                        <p style="padding:0px; margin:0px"> <b>SENT DATE : </b> {{email.date}}</p>
+                    </span>
+                </div>
+                
+            </div>
+
+        </div>
+        <div *ngFor="let email of emails">
+            <p class="card-title scroll"><span class="scrollText" [innerText]="emailBody"></span></p>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- modal -->
+    <ng-template #content let-modal>
+        <div class="modal-header" *ngFor="let email of emails">
+            <div *ngIf="email.subject;else noSubject">
+                <div class="modal-title pull-left" style="margin-left:-8px;">
+                    <mark><b>SUBJECT :</b> {{ email.subject}}</mark>
+                </div>
+            </div>
+            <ng-template #noSubject><a style="padding-left:-8px"> Sorry No Subject !! :(</a></ng-template>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+        </div>
+        <b style="padding-left:7px;">Message :</b>
+        <div class="modal-body">
+            <div *ngFor="let email of emails">
+                <p class="card-text text-left" [innerText]="emailBody"></p>
+            </div>
+        </div>
+    </ng-template>

@@ -11,35 +11,24 @@ import { ApiServiceService } from 'src/app/service/api-service.service';
 
 export class SinglePageComponent implements OnInit {
 
-  constructor(private apiService:ApiServiceService , private httpClient: HttpClient) { }
-
-  public emails!: Email[];
-  public messageBody:any;
-
-  ngOnInit(): void {
-
-    this.emails = this.apiService.getMessage() ;
-    
-    // cleaning the text
-    const index1 = this.emails[0].body.lastIndexOf("Subject:");
-    if ( index1 == -1 )
-    this.messageBody = this.emails[0].body;
-    else{
-     const index2 = this.emails[0].body.indexOf("\n",index1) ;
-     this.messageBody = this.emails[0].body.substring(index2) ;
-    }
-    this.messageBody = this.messageBody.replace(/^\s+|\s+$/g,'');
-    
-  }
-
-  
   isReadMorecc = true
   isReadMoreto = true 
   isReadMoretext = true 
   isReadMorecontent = true 
 
- 
+  constructor(private apiService:ApiServiceService , private httpClient: HttpClient) { }
 
+  public emails!: Email[];
+  public emailBody:any;
+
+  ngOnInit(): void {
+
+    this.emails = this.apiService.getMessage() ;
+    this.emailBody = this.emails[0].body;
+    
+  }
+
+  
   showcontent(){
     this.isReadMorecontent = !this.isReadMorecontent ;
   }

@@ -1,98 +1,4 @@
-<form [formGroup]="filterForm" (ngSubmit)="onSubmit()">
-
-<div class="filter">
-<!-- MessageId Dropdown -->
-
-  <ng-multiselect-dropdown
-  class="message"
-  [placeholder]="'Message ID'"
-  [(ngModel)]="selectedItemMessage"
-  [settings]="dropdownSettingsMessage"
-  [data]="dropdownListMessage"
-  formControlName="formMessageID"
-  (onSelect)="onItemSelectID($event)"
-  (onDeSelect)="onItemDeSelectID($event)"
-  (onSelectAll)="onSelectAllID($event)"
->
-</ng-multiselect-dropdown>
-
-
-<!-- From DropDown -->
-<ng-multiselect-dropdown
-class="from"
-id="fromId"
-[placeholder]="'From'"
-[(ngModel)]="selecedItemFrom"
-[settings]="dropdownSettingsFrom"
-[data]="dropdownListFrom"
-formControlName="formFrom"
-(onSelect)="onItemSelectFrom($event)"
-(onDeSelect)="onItemDeSelectFrom($event)"
-(onSelectAll)="onSelectAllFrom($event)"
-clearSearchFilter="True"
->
-</ng-multiselect-dropdown>
-
-<!-- ******************************************************************************************************** -->
-
-<div class="form-group date">
-  <div class="input-group">
-    <input #dpFromDate style="font-family: Arial;"
-    type="text"
-           class="form-control" placeholder="Dates"
-           name="dpFromDate" formControlName="sentDate"
-           [value]="formatter.format(fromDate)  + space  + formatter.format(toDate)"
-           [(ngModel)] = "dateRangePicker"
-           (input)="fromDate = validateInput(fromDate, dpFromDate.value)">
-    <div class="input-group-append">
-      <button class="btn btn-outline-secondary calendar"  style="height:38px;" (click)="datepicker.toggle()" type="button"></button>
-    </div>
-  </div>
-</div>
-
-<div class="form-group hidden">
-  <div class="input-group">
-    <input name="datepicker" hidden="true"
-           class="form-control"
-           ngbDatepicker
-           #datepicker="ngbDatepicker"
-           [autoClose]="'outside'"
-           (dateSelect)="onDateSelection($event)"
-           [displayMonths]="2"
-           [dayTemplate]="t"
-           outsideDays="hidden"
-           [startDate]="fromDate!"
-           tabindex="-1"
-           [minDate]={year:1960,month:01,day:01} 
-           [maxDate]= {year:2031,month:12,day:31} 
-           
-          >
-    <ng-template #t let-date let-focused="focused">
-      <span class="custom-day"
-            [class.focused]="focused"
-            [class.range]="isRange(date)"
-            [class.faded]="isHovered(date) || isInside(date)"
-            (mouseenter)="hoveredDate = date"
-            (mouseleave)="hoveredDate = null">
-        {{ date.day }}
-      </span>
-    </ng-template>
-  </div>
-</div>
-
-
-<!-- ******************************************************************************************************** -->
-  <!-- apply and reset button -->
-  <button type="submit" class="btn btn-primary applybutt" data-toggle="tooltip" data-placement="top" title="Click here to Apply">Apply</button>
-  <button type="button" class="btn btn-outline-primary resetbutt" data-toggle="tooltip" data-placement="top" title="Click here to Reset"  (click)="resetButton()">Reset</button>
-
-
-  
-
- </div>
-</form>
-  
-
+<app-filter></app-filter>
 
 
 <!-- Ag-Grid-Table -->
@@ -103,7 +9,7 @@ class="ag-theme-balham"
 [rowData]="rowData"
 [columnDefs]="columnDefs"
 pagination = "true" 
-paginationPageSize="100"
+[paginationPageSize]="pageSize"
 (paginationChanged)='onPaginationChanged($event)'
 animateRows = "true"
 enableSorting = "true"
@@ -117,61 +23,11 @@ unSortIcon="true"
 
 
 
-
-
-<!-- card -->
-<div class="cardsingle" style="font-family: Arial;">
-    <div class="card overflow-auto cardbody" style="width: 72.2rem;">
-    
-        <div class="card-header head" *ngFor="let email of emails">
-
-          
-            <button routerLink="/singleMail"  class="btn single">open in new page</button>
-            <button class="btn buttopenhere" (click)="openLg(content)">open message here</button>
-                <div class="cardContent text-left">
-                   
-            
-            <span class="col-md-10"><p class="card-text"> <mark><b>SUBJECT :</b> {{ email.subject}}</mark></p></span>
-            <span class="col-md-10"><p class="card-text"> <b>MESSAGE ID :</b> {{ email.id}}</p></span>
-
-
-            <div  class="row">
-              <span class="col-md-4"><p class="card-text"> <b>FROM :</b> {{email.from}}</p></span>
-              <span class="col-md-4"><p style="padding:0px; margin:0px"> <b>SENT DATE : </b> {{email.date}}</p></span>
-            </div>
-        </div>
-       
-  </div>
-<div *ngFor="let email of emails"> <p class="card-title scroll"><span class="scrollText">{{email.body}}</span></p></div>
-      </div>
+ <app-message-card></app-message-card>
 
 
 
 
-      <!-- modal -->
-      <ng-template #content let-modal>
-         <div  class="modal-header" *ngFor="let email of emails">
-            <div *ngIf="email.subject;else noSubject">
-                <div class="modal-title pull-left" style="margin-left:-8px;">
-                    <mark><b>SUBJECT :</b> {{ email.subject}}</mark>
-                </div>
-             </div>
-                  <ng-template #noSubject><a style="padding-left:-8px"> Sorry No Subject !! :(</a></ng-template>
-                  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-                    <span aria-hidden="true">&times;</span>
-                  </button> 
-                
-              </div>
-              <b style="padding-left:7px;">Message :</b>
-                <div class="modal-body">
-                <div *ngFor="let email of emails">
-                <p class="card-text text-left">{{email.body}}</p>
-          </div>
-       </div>
-      </ng-template>
-      
-      
-      
-      
+     
 
       
