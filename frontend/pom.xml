@@ -14,7 +14,7 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>frontend Maven Webapp</name>
+  <name>frontend Maven WEBAPP</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -83,6 +83,7 @@
                     </goals>
                     <configuration>
                         <nodeVersion>v14.17.1</nodeVersion>
+						<workingDirectory>src/main/solrFrontend</workingDirectory>
                     </configuration>
                 </execution>
                          <execution>
@@ -92,6 +93,7 @@
                     </goals>
                     <configuration>
                         <arguments>install</arguments>
+						<workingDirectory>src/main/solrFrontend</workingDirectory>
                     </configuration>
                 </execution>
                 <execution>
@@ -100,7 +102,8 @@
                         <goal>npm</goal>
                     </goals>
                     <configuration>
-                        <arguments>run buildProduction</arguments>
+                        <arguments>run build</arguments>
+						<workingDirectory>src/main/solrFrontend</workingDirectory>
                     </configuration>
                     <phase>generate-resources</phase>
                 </execution>

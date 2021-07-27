@@ -9,12 +9,12 @@ logging.basicConfig(filename='logs.txt', filemode='a', level=logging.INFO)
 
 
 # Class to connect to Solr connection and Index the Cleaned data into it.
-class DataUploader:   # pragma: no cover
+class DataUploader:  # pragma: no cover   <--
 
     # @Input : Take solr connection string and collection name
     # Connect with Solr Cloud Collection using Zookeeper
     # @Output : Return the solr connection
-    def create_solr_connection(self, solr_zookeeper_string, solr_collection_name):  # pragma: no cover
+    def create_solr_connection(self, solr_zookeeper_string, solr_collection_name): # pragma: no cover
         zookeeper = pysolr.ZooKeeper(solr_zookeeper_string)
         solr = pysolr.SolrCloud(zookeeper, solr_collection_name)
         logging.info('Solr Connection Created Successfully!')
@@ -23,13 +23,13 @@ class DataUploader:   # pragma: no cover
     # @Input : Take solr connection object and dataset to index
     # Add the data from dataset int solr in chunks of 10,000 entries.
     # @Output : Data Index and ready to be used.
-    def push_data_into_solr(self, solrObject, datasetPath):   # pragma: no cover
+    def push_data_into_solr(self, solrObject, datasetPath): # pragma: no cover
         maxInt = sys.maxsize
         while True:
             try:   # pragma: no cover
                 csv.field_size_limit(maxInt)
                 break
-            except OverflowError:   # pragma: no cover
+            except OverflowError: # pragma: no cover
                 maxInt = int(maxInt / 10)
 
         csvFile = open(datasetPath, 'r')
@@ -52,7 +52,7 @@ class DataUploader:   # pragma: no cover
 
     # This function fetch the cleaned file from cleaned file folder and index it at Solr
     # Cloud of given configuration
-    def index_data(self, dataHandler):  # pragma: no cover
+    def index_data(self, dataHandler): # pragma: no cover
         try:
             from ..configHelper.readWriteHelper import ReadWriteHelper
             readWriteHelper = ReadWriteHelper()
@@ -63,5 +63,5 @@ class DataUploader:   # pragma: no cover
             self.push_data_into_solr(solrHandler, cleaned_file_path)
             logging.info("Cleaned Data Indexed Successfully!")
 
-        except Exception as e:   # pragma: no cover
+        except Exception as e: # pragma: no cover
             print('ERROR:', e)

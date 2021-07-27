@@ -6,7 +6,7 @@ from services.configHelper.readWriteHelper import ReadWriteHelper
 logging.basicConfig(filename='mainLogs.txt', filemode='a', level=logging.INFO)
 
 
-class DataHandler:
+class DataHandler:  # pragma: no cover   <--
     configFilePath = ''
     configurations = None
     dataCleaningFlag: bool
@@ -37,7 +37,7 @@ class DataHandler:
             print('ERROR:', e)
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover   <--
     parser = argparse.ArgumentParser()
     parser.add_argument('-c', help='Config File Path for Data Handler', dest='configFilePath', required=True)
     parser.add_argument('-cf', help='Cleaned File Flag for DSIU_Processor', dest='dataCleaningFlag', default=True)
