@@ -10,9 +10,11 @@ logging.basicConfig(filename='logs.txt', filemode='a', level=logging.INFO)
 
 class DataCleaner:
 
+    def __init__(self):
     # @Input : Takes Field Name and list of Data
     # Traverse whole input data and extract field header from it
     # Output : Returns list of the input Field extracted from data
+
     def get_field(self, field, messages):
         try:
             column = []
