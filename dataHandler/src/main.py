@@ -13,7 +13,7 @@ class DataHandler:  # pragma: no cover   <--
     dataIndexingFlag: bool
 
     # Class Constructor to initialized parsed input and process them
-    def __init__(self, configPath, cleaningFlag="True", indexingFlag="True"):
+    def __init__(self, configPath, cleaningFlag=True, indexingFlag=True):
         self.configFilePath = configPath
         self.dataCleaningFlag = cleaningFlag
         self.dataIndexingFlag = indexingFlag
