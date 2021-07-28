@@ -26,14 +26,14 @@ class DataHandler:  # pragma: no cover   <--
         try:
             from services.dataUploader.dataUploader import DataUploader
             from services.dataCleaner.dataCleaner import DataCleaner
-            if self.dataCleaningFlag == "True":
+            if self.dataCleaningFlag == True:
                 dataCleaner = DataCleaner()
                 dataCleaner.clean_data(self)
-            if self.dataIndexingFlag == "True":
+            if self.dataIndexingFlag == True:
                 dataUploader = DataUploader()
                 dataUploader.index_data(self)
 
-        except Exception as e:   # pragma: no cover
+        except Exception as e:  # pragma: no cover
             print('ERROR:', e)
 
 
