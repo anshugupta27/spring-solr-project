@@ -10,6 +10,33 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 })
 export class MessageCardComponent implements OnInit {
 
+
+  isReadMorecc = true
+  isReadMoreto = true
+  isReadMoretext = true
+  isReadMorefrom = true
+
+  showfrom(){
+    this.isReadMorefrom = !this.isReadMorefrom ;
+  }
+
+  showcc(){
+    this.isReadMorecc = !this.isReadMorecc ;
+  }
+  showText() {
+    this.isReadMoretext = !this.isReadMoretext ;
+
+  }
+
+  showto(){
+    this.isReadMoreto = !this.isReadMoreto ;
+  }
+
+
+
+
+
+
   public emailBody: any;
   public emails!: Email[];
   constructor(private shareDataService: ShareDataService, private ngbModal: NgbModal) { }
@@ -22,8 +49,8 @@ export class MessageCardComponent implements OnInit {
   }
 
   // modal
-  openLg(content: any) {
-    this.ngbModal.open(content, { size: 'lg' });
+  openXl(content: any) {
+    this.ngbModal.open(content, { size: 'xl' });
 
   }
   private getDismissReason(reason: any): string {

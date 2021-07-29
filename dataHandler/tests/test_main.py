@@ -1,7 +1,7 @@
 import sys
 sys.path.insert(0, '../src')
 sys.path.insert(0, '../src/services')
-sys.path.append('C:/Users/Administrator/Documents/Maven/dsiu/dataHandler/src')
+sys.path.append('C:/Users/Administrator/Documents/DB-Github/solr-index-ui/dataHandler/src')
 
 import filecmp
 import unittest
@@ -12,7 +12,7 @@ from src.services.configHelper.readWriteHelper import ReadWriteHelper
 
 class DataHandlerTester(unittest.TestCase):
     configurations = None
-    configFilePath = "C:/Users/Administrator/Documents/Maven/dsiu/dataHandler/tests/conf/config.json"
+    configFilePath = "C:/Users/Administrator/Documents/DB-Github/solr-index-ui/dataHandler/tests/conf/config.json"
     cleaningFlag = True
     indexingFlag = False
 

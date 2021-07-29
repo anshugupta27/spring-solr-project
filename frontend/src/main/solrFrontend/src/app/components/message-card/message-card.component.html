@@ -1,29 +1,42 @@
 <div class="cardsingle" style="font-family: Arial;">
     <div class="card overflow-auto cardbody" style="width: 72.2rem;">
 
+
+
         <div class="card-header head" *ngFor="let email of emails">
-            <button routerLink="/singleMail" class="btn single">open in new page</button>
-            <button class="btn buttopenhere" (click)="openLg(content)">open message here</button>
-            <div class="cardContent text-left">
 
-                <span class="col-md-10">
-                    <p class="card-text"> <mark><b>SUBJECT :</b> {{ email.subject}}</mark></p>
-                </span>
-                <span class="col-md-10">
-                    <p class="card-text"> <b>MESSAGE ID :</b> {{ email.id}}</p>
+            <div class="row">
+                <span class="col-md-10" style="padding-left:14px;">
+                    <p class="card-text"> <b>SUBJECT :</b> {{ email.subject}}</p>
                 </span>
 
 
-                <div class="row">
-                    <span class="col-md-4">
-                        <p class="card-text"> <b>FROM :</b> {{email.from}}</p>
-                    </span>
-                    <span class="col-md-4">
-                        <p style="padding:0px; margin:0px"> <b>SENT DATE : </b> {{email.date}}</p>
-                    </span>
-                </div>
-                
+                <button type="button" class="btnbtn-outline-secondary col-md-2"
+                    style="width:150px; padding:6px; margin:0px; background-color: white" (click)="openXl(content)">
+                    Show Message</button>
             </div>
+
+            <span class="col-md-4">
+                <p class="card-text"> <b>FROM :</b> {{email.from}}</p>
+            </span>
+            <span class="col-md-4">
+                <p class="card-text"> <b>TO :</b> {{email.to}}</p>
+            </span>
+            <span class="col-md-4">
+                <p class="card-text"> <b>CC :</b> {{email.cc}}</p>
+            </span>
+
+
+            <div class="row" style="padding-left:0px;">
+                <span class="col-md-5">
+                    <p class="card-text"> <b>BCC:</b> {{ email.bcc}}</p>
+                </span>
+                <span class="col-md-4">
+                    <p style="padding:0px; margin:0px"> <b>SENT DATE : </b> {{email.date}}</p>
+                </span>
+            </div>
+
+
 
         </div>
         <div *ngFor="let email of emails">
@@ -35,24 +48,94 @@
 
 
 
-    <!-- modal -->
+
+
+
+
+
     <ng-template #content let-modal>
-        <div class="modal-header" *ngFor="let email of emails">
-            <div *ngIf="email.subject;else noSubject">
-                <div class="modal-title pull-left" style="margin-left:-8px;">
-                    <mark><b>SUBJECT :</b> {{ email.subject}}</mark>
-                </div>
-            </div>
-            <ng-template #noSubject><a style="padding-left:-8px"> Sorry No Subject !! :(</a></ng-template>
+        <div class="modal-header"
+            style="background-color: rgb(174, 178, 180); height: 40px; font-size: 13px; font-family: Arial;">
+            <p *ngFor="let email of emails" class="modal-title" style="padding-top:1px; font-size:14px;"
+                id="modal-basic-title">
+                <b>Message Id : </b> {{email.id}}
+            </p>
             <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
                 <span aria-hidden="true">&times;</span>
             </button>
-
         </div>
-        <b style="padding-left:7px;">Message :</b>
+        <div>
+            <span *ngFor="let email of emails" class="col-md-10">
+                <p style="padding-top:1px; padding-left:10px; margin:0px; font-size: 13px; font-family: Arial;">
+                    <b>Subject : </b> {{email.subject}}</p>
+            </span>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <th class="col-md-3"> FROM : </th>
+                <th class="col-md-3"> To : </th>
+                <th class="col-md-3"> CC : </th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let message of emails">
+
+                    <td class="col-md-1 modalRow">
+
+                        <div *ngIf="message.from">
+                            <p [ngClass]="{'limitTextHeight': isReadMorefrom}">
+                                {{message.from}}
+                            </p>
+
+                            <div *ngIf="message.from.length>50;">
+                                <b class="clickme" (click)="showfrom()">{{ isReadMorefrom ? '...Read More': 'Read Less'
+                                    }}</b>
+                            </div>
+                        </div>
+
+                    </td>
+
+
+                    <td class="col-md-1 modalRow">
+
+                        <div *ngIf="message.to">
+                            <p [ngClass]="{'limitTextHeight': isReadMoreto}">
+                                {{message.to}}
+                            </p>
+
+                            <div *ngIf="message.to.length>50;">
+                                <b class="clickme" (click)="showto()">{{ isReadMoreto ? '...Read More': 'Read Less'
+                                    }}</b>
+                            </div>
+                        </div>
+
+                    </td>
+
+
+
+                    <td class="col-md-1 modalRow">
+
+                        <div *ngIf="message.cc">
+                            <p [ngClass]="{'limitTextHeight': isReadMorecc}">
+                                {{message.cc}}
+                            </p>
+
+                            <div *ngIf="message.to.length>50;">
+                                <b class="clickme" (click)="showcc()">{{ isReadMorecc ? '...Read More': 'Read Less'
+                                    }}</b>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         <div class="modal-body">
-            <div *ngFor="let email of emails">
-                <p class="card-text text-left" [innerText]="emailBody"></p>
+            <div class="p-2" style=" padding-top: 0px; height:fit-content; font-size: 13px; font-family: Arial;">
+                <p class="card-title" [innerText]="emailBody"></p>
+
             </div>
         </div>
+
+
+
     </ng-template>

@@ -1,6 +1,8 @@
 {
     "solr_zookeeper_string" : "localhost:9983",
-    "uncleaned_data_path" : "C:\\Users\\Administrator\\Documents\\Maven\\uncleaned_file",
-    "cleaned_data_path" : "C:\\Users\\Administrator\\Documents\\Maven\\cleaned_file",
-    "solr_collection_name" : "dataset"
+    "uncleaned_data_path" : "C:\\Users\\Administrator\\Documents\\DB-Github\\solr-index-ui\\Raw_Data",
+    "cleaned_data_path" : "C:\\Users\\Administrator\\Documents\\DB-Github\\solr-index-ui\\Processed_Data",
+    "solr_collection_name" : "dataset",
+    "field_names" : ["messageId", "date", "subject", "from", "to", "cc", "bcc", "mimeVersion", "contentType", "body"],
+    "chunk_size_for_solr_upload" : 10000
 }

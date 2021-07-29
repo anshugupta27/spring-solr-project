@@ -1,0 +1,150 @@
+INFO:root:Configuration File parsed and converted into JSON
+INFO:root:Config path : C:/Users/Administrator/IdeaProjects/dsiu/dataHandler/tests/conf/config.json , Cleansed_Flag : True, Index_Flag : False extracted successfully
+INFO:root:Datahandler constructor running finished
+INFO:root:Un-Cleaned Data CSV read Successfully!
+INFO:root:Emails Fields extraction completed Successfully! -Message-ID
+INFO:root:Emails Fields extraction completed Successfully! -Date
+INFO:root:Emails Fields extraction completed Successfully! -Subject
+INFO:root:Emails Fields extraction completed Successfully! -X-From
+INFO:root:Emails Fields extraction completed Successfully! -X-To
+INFO:root:Emails Fields extraction completed Successfully! -X-cc
+INFO:root:Emails Fields extraction completed Successfully! -X-bcc
+INFO:root:Emails Fields extraction completed Successfully! -Mime-Version
+INFO:root:Emails Fields extraction completed Successfully! -Content-Type
+INFO:root:Clean file path created Successfully!
+INFO:root:Cleaned Data CSV added Successfully!
+INFO:root:Configuration File parsed and converted into JSON
+INFO:root:Config path : C:/Users/Administrator/IdeaProjects/dsiu/dataHandler/tests/conf/config.json , Cleansed_Flag : True, Index_Flag : False extracted successfully
+INFO:root:Datahandler constructor running finished
+INFO:root:Un-Cleaned Data CSV read Successfully!
+INFO:root:Emails Fields extraction completed Successfully! -Message-ID
+INFO:root:Emails Fields extraction completed Successfully! -Date
+INFO:root:Emails Fields extraction completed Successfully! -Subject
+INFO:root:Emails Fields extraction completed Successfully! -X-From
+INFO:root:Emails Fields extraction completed Successfully! -X-To
+INFO:root:Emails Fields extraction completed Successfully! -X-cc
+INFO:root:Emails Fields extraction completed Successfully! -X-bcc
+INFO:root:Emails Fields extraction completed Successfully! -Mime-Version
+INFO:root:Emails Fields extraction completed Successfully! -Content-Type
+INFO:root:Clean file path created Successfully!
+INFO:root:Cleaned Data CSV added Successfully!
+INFO:root:Configuration File parsed and converted into JSON
+INFO:root:Config path : C:/Users/Administrator/IdeaProjects/dsiu/dataHandler/tests/conf/config.json , Cleansed_Flag : True, Index_Flag : False extracted successfully
+INFO:root:Datahandler constructor running finished
+INFO:root:Un-Cleaned Data CSV read Successfully!
+INFO:root:Emails Fields extraction completed Successfully! -Message-ID
+INFO:root:Emails Fields extraction completed Successfully! -Date
+INFO:root:Emails Fields extraction completed Successfully! -Subject
+INFO:root:Emails Fields extraction completed Successfully! -X-From
+INFO:root:Emails Fields extraction completed Successfully! -X-To
+INFO:root:Emails Fields extraction completed Successfully! -X-cc
+INFO:root:Emails Fields extraction completed Successfully! -X-bcc
+INFO:root:Emails Fields extraction completed Successfully! -Mime-Version
+INFO:root:Emails Fields extraction completed Successfully! -Content-Type
+INFO:root:Clean file path created Successfully!
+INFO:root:Cleaned Data CSV added Successfully!
+INFO:root:Configuration File parsed and converted into JSON
+INFO:root:Config path : C:/Users/Administrator/IdeaProjects/dsiu/dataHandler/tests/conf/config.json , Cleansed_Flag : True, Index_Flag : False extracted successfully
+INFO:root:Datahandler constructor running finished
+INFO:root:Un-Cleaned Data CSV read Successfully!
+INFO:root:Emails Fields extraction completed Successfully! -Message-ID
+INFO:root:Emails Fields extraction completed Successfully! -Date
+INFO:root:Emails Fields extraction completed Successfully! -Subject
+INFO:root:Emails Fields extraction completed Successfully! -X-From
+INFO:root:Emails Fields extraction completed Successfully! -X-To
+INFO:root:Emails Fields extraction completed Successfully! -X-cc
+INFO:root:Emails Fields extraction completed Successfully! -X-bcc
+INFO:root:Emails Fields extraction completed Successfully! -Mime-Version
+INFO:root:Emails Fields extraction completed Successfully! -Content-Type
+INFO:root:Clean file path created Successfully!
+INFO:root:Cleaned Data CSV added Successfully!
+INFO:root:Configuration File parsed and converted into JSON
+INFO:root:Config path : C:/Users/Administrator/IdeaProjects/dsiu/dataHandler/tests/conf/config.json , Cleansed_Flag : True, Index_Flag : False extracted successfully
+INFO:root:Datahandler constructor running finished
+INFO:root:Un-Cleaned Data CSV read Successfully!
+INFO:root:Emails Fields extraction completed Successfully! -Message-ID
+INFO:root:Emails Fields extraction completed Successfully! -Date
+INFO:root:Emails Fields extraction completed Successfully! -Subject
+INFO:root:Emails Fields extraction completed Successfully! -X-From
+INFO:root:Emails Fields extraction completed Successfully! -X-To
+INFO:root:Emails Fields extraction completed Successfully! -X-cc
+INFO:root:Emails Fields extraction completed Successfully! -X-bcc
+INFO:root:Emails Fields extraction completed Successfully! -Mime-Version
+INFO:root:Emails Fields extraction completed Successfully! -Content-Type
+INFO:root:Clean file path created Successfully!
+INFO:root:Cleaned Data CSV added Successfully!
+INFO:root:Configuration File parsed and converted into JSON
+INFO:root:Config path : C:/Users/Administrator/IdeaProjects/dsiu/dataHandler/tests/conf/config.json , Cleansed_Flag : True, Index_Flag : False extracted successfully
+INFO:root:Datahandler constructor running finished
+INFO:root:Un-Cleaned Data CSV read Successfully!
+INFO:root:Emails Fields extraction completed Successfully! -Message-ID
+INFO:root:Emails Fields extraction completed Successfully! -Date
+INFO:root:Emails Fields extraction completed Successfully! -Subject
+INFO:root:Emails Fields extraction completed Successfully! -X-From
+INFO:root:Emails Fields extraction completed Successfully! -X-To
+INFO:root:Emails Fields extraction completed Successfully! -X-cc
+INFO:root:Emails Fields extraction completed Successfully! -X-bcc
+INFO:root:Emails Fields extraction completed Successfully! -Mime-Version
+INFO:root:Emails Fields extraction completed Successfully! -Content-Type
+INFO:root:Clean file path created Successfully!
+INFO:root:Cleaned Data CSV added Successfully!
+INFO:root:Configuration File parsed and converted into JSON
+INFO:root:Config path : C:/Users/Administrator/IdeaProjects/dsiu/dataHandler/tests/conf/config.json , Cleansed_Flag : True, Index_Flag : False extracted successfully
+INFO:root:Datahandler constructor running finished
+INFO:root:Un-Cleaned Data CSV read Successfully!
+INFO:root:Emails Fields extraction completed Successfully! -Message-ID
+INFO:root:Emails Fields extraction completed Successfully! -Date
+INFO:root:Emails Fields extraction completed Successfully! -Subject
+INFO:root:Emails Fields extraction completed Successfully! -X-From
+INFO:root:Emails Fields extraction completed Successfully! -X-To
+INFO:root:Emails Fields extraction completed Successfully! -X-cc
+INFO:root:Emails Fields extraction completed Successfully! -X-bcc
+INFO:root:Emails Fields extraction completed Successfully! -Mime-Version
+INFO:root:Emails Fields extraction completed Successfully! -Content-Type
+INFO:root:Clean file path created Successfully!
+INFO:root:Cleaned Data CSV added Successfully!
+INFO:root:Configuration File parsed and converted into JSON
+INFO:root:Config path : C:/Users/Administrator/IdeaProjects/dsiu/dataHandler/tests/conf/config.json , Cleansed_Flag : True, Index_Flag : False extracted successfully
+INFO:root:Datahandler constructor running finished
+INFO:root:Un-Cleaned Data CSV read Successfully!
+INFO:root:Emails Fields extraction completed Successfully! -Message-ID
+INFO:root:Emails Fields extraction completed Successfully! -Date
+INFO:root:Emails Fields extraction completed Successfully! -Subject
+INFO:root:Emails Fields extraction completed Successfully! -X-From
+INFO:root:Emails Fields extraction completed Successfully! -X-To
+INFO:root:Emails Fields extraction completed Successfully! -X-cc
+INFO:root:Emails Fields extraction completed Successfully! -X-bcc
+INFO:root:Emails Fields extraction completed Successfully! -Mime-Version
+INFO:root:Emails Fields extraction completed Successfully! -Content-Type
+INFO:root:Clean file path created Successfully!
+INFO:root:Cleaned Data CSV added Successfully!
+INFO:root:Configuration File parsed and converted into JSON
+INFO:root:Config path : C:/Users/Administrator/Documents/DB-Github/solr-index-ui/dataHandler/tests/conf/config.json , Cleansed_Flag : True, Index_Flag : False extracted successfully
+INFO:root:Datahandler constructor running finished
+INFO:root:Un-Cleaned Data CSV read Successfully!
+INFO:root:Emails Fields extraction completed Successfully! -Message-ID
+INFO:root:Emails Fields extraction completed Successfully! -Date
+INFO:root:Emails Fields extraction completed Successfully! -Subject
+INFO:root:Emails Fields extraction completed Successfully! -X-From
+INFO:root:Emails Fields extraction completed Successfully! -X-To
+INFO:root:Emails Fields extraction completed Successfully! -X-cc
+INFO:root:Emails Fields extraction completed Successfully! -X-bcc
+INFO:root:Emails Fields extraction completed Successfully! -Mime-Version
+INFO:root:Emails Fields extraction completed Successfully! -Content-Type
+INFO:root:Clean file path created Successfully!
+INFO:root:Cleaned Data CSV added Successfully!
+INFO:root:Configuration File parsed and converted into JSON
+INFO:root:Config path : C:/Users/Administrator/Documents/DB-Github/solr-index-ui/dataHandler/tests/conf/config.json , Cleansed_Flag : True, Index_Flag : False extracted successfully
+INFO:root:Datahandler constructor running finished
+INFO:root:Un-Cleaned Data CSV read Successfully!
+INFO:root:Emails Fields extraction completed Successfully! -Message-ID
+INFO:root:Emails Fields extraction completed Successfully! -Date
+INFO:root:Emails Fields extraction completed Successfully! -Subject
+INFO:root:Emails Fields extraction completed Successfully! -X-From
+INFO:root:Emails Fields extraction completed Successfully! -X-To
+INFO:root:Emails Fields extraction completed Successfully! -X-cc
+INFO:root:Emails Fields extraction completed Successfully! -X-bcc
+INFO:root:Emails Fields extraction completed Successfully! -Mime-Version
+INFO:root:Emails Fields extraction completed Successfully! -Content-Type
+INFO:root:Clean file path created Successfully!
+INFO:root:Cleaned Data CSV added Successfully!

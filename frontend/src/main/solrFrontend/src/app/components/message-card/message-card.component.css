@@ -1,19 +1,40 @@
+/* show more */
+.limitTextHeight {
+  height: 20px;
+
+  overflow: hidden;
+}
+
+/* modal row */
+.modalRow{
+  padding-top:10px;
+   margin:0px;
+   font-size: 13px;
+   font-family: Arial;
+}
+.clickme{
+  padding-left:-20px;
+  font-weight: 100;
+  color:blue;
+
+}
+
 /* card */
   .cardsingle{
     padding-left:23px;
     padding-bottom:20px;
     margin-top:-10px;
-    font-size:15px;
+    font-size:13px;
     font-family:Arial;
-    
+
   }
-  
+
   .single{
-    margin-left:780px;
-    margin-right:12px;
+    /* margin-left:780px;
+    margin-right:12px; */
     background-color:#FDD2BF;
   }
-  
+
   .cardbody{
     margin-top:10px;
   }
@@ -21,15 +42,17 @@
 
   /* Modal button open here */
   .buttopenhere{
+    margin-left:11px;
+    margin-right:0px;
     background-color:#B5EAEA;
   }
-  
+
   .modal-body{
     padding-left:10px;
     margin-left:40px;
   }
-  
-  
+
+
   /* card scroll */
   .scroll {
     max-height: 100px;
@@ -41,30 +64,36 @@
     width:1152px;
     text-align: left;
   }
-  
+
+  .scrollM {
+    max-height: 100px;
+    padding-right:10px;
+    overflow-x: auto;
+}
+
   .scrollText{
     width:100%;
   }
-  
-  
+
+
   /* card content */
   .cardContent{
     margin-left:25px;
   }
-  
-  
+
+
   b{
     color:black;
     font-family: Arial;
   }
-  
+
   p{
     font-family: Arial;
     font-weight: 900px;
   }
-  
+
   .text-left{
     margin-left:-20px;
-    
+
   }
-  
+
