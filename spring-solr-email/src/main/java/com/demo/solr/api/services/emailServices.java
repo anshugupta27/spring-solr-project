@@ -14,7 +14,7 @@ import com.demo.solr.api.model.Email;
  *
  */
 
-public interface emailServices {
+public interface EmailServices {
 
 	String countAll();
 	List<Email> getByDate(String date , int limit, int offset) throws ResourceNotFoundException ;

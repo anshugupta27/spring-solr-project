@@ -18,6 +18,10 @@ public class PropertyValues {
 	@Value("${pageable.values.offset}")
 	private int offset;
 	
+	@Value("${pageable.date.limit}")
+	private int dateLimit;
+	@Value("${pageable.date.offset}")
+	private int dateOffset;
 	public int getLimit() {
 		return limit;
 	}
@@ -30,5 +34,20 @@ public class PropertyValues {
 	public void setOffset(int offset) {
 		this.offset = offset;
 	}
+	public int getDateLimit() {
+		return dateLimit;
+	}
+	public void setDateLimit(int dateLimit) {
+		this.dateLimit = dateLimit;
+	}
+	public int getDateOffset() {
+		return dateOffset;
+	}
+	public void setDateOffset(int dateOffset) {
+		this.dateOffset = dateOffset;
+	}
+	
+	
+	
 	
 }

@@ -24,8 +24,8 @@ import org.springframework.data.domain.Pageable;
 
 import com.demo.solr.api.exception.ResourceNotFoundException;
 import com.demo.solr.api.model.Email;
-import com.demo.solr.api.repository.emailRepository;
-import com.demo.solr.api.services.emailServices;
+import com.demo.solr.api.repository.EmailRepository;
+import com.demo.solr.api.services.EmailServices;
 
 @SuppressWarnings("deprecation")
 @SpringBootTest
@@ -33,10 +33,10 @@ import com.demo.solr.api.services.emailServices;
 class SpringSolrApplicationTests {
 
 	@Autowired
-	private emailServices service;
+	private EmailServices service;
 	
 	@MockBean
-	private emailRepository repository;
+	private EmailRepository repository;
 		
 	/**
 	 * 
