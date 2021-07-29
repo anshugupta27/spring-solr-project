@@ -12,16 +12,14 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import com.demo.solr.api.exception.ResourceNotFoundException;
 import com.demo.solr.api.model.Email;
-import com.demo.solr.api.propertyValues.PropertyValues;
-import com.demo.solr.api.repository.EmailRepository;
+import com.demo.solr.api.repository.emailRepository;
 
 @Service
-public class ServicesImplemetation implements EmailServices {
+public class ServicesImplemetation implements emailServices {
 
 	@Autowired
-	private EmailRepository repository;
-	@Autowired
-	PropertyValues propertyValues ;
+	private emailRepository repository;
+	
 	
 	/**
 	 * @return count of all the Email present
@@ -29,8 +27,7 @@ public class ServicesImplemetation implements EmailServices {
 	
 	@Override
 	public String countAll() {
-		String res = "Total number of emails in the dataset are " + String.valueOf(repository.count()) ;
-		return res ;
+		return "Total number of emails in the dataset are " + String.valueOf(repository.count());
 	}
 	
 	/**
@@ -44,11 +41,11 @@ public class ServicesImplemetation implements EmailServices {
 		Pageable pageable = new OffsetBasedPageRequest(limit, offset);
 		
 
-		List<Email> emailsByDate = repository.findAllByDate(date  ,pageable);
+		List<Email> Emails = repository.findAllByDate(date  ,pageable);
 		
-		if ( emailsByDate.isEmpty())
+		if ( Emails.isEmpty())
 			throw new ResourceNotFoundException( date) ;
-		return emailsByDate ;
+		return Emails ;
 		
 	}
 	
@@ -60,10 +57,10 @@ public class ServicesImplemetation implements EmailServices {
 	@Override
 	public List<Email> getAllEmails (int limit, int offset) throws ResourceNotFoundException {
         Pageable pageable = new OffsetBasedPageRequest(limit, offset);
-        List<Email> emails = repository.findAll(pageable).getContent();
-        if ( emails.isEmpty())
+        List<Email> Emails = repository.findAll(pageable).getContent();
+        if ( Emails.isEmpty())
         	throw new ResourceNotFoundException("no data") ;
-        return emails ;
+        return Emails ;
         
     }
 	
@@ -76,14 +73,14 @@ public class ServicesImplemetation implements EmailServices {
 	@Override
 	public List<Email> getByFrom(String from) throws ResourceNotFoundException {
 		
-		List<Email> emailsByFrom = repository.findAllByFrom(from);
+		List<Email> Emails = repository.findAllByFrom(from);
 		try {
-			if ( emailsByFrom.isEmpty() ) {
+			if ( Emails.isEmpty() ) {
 				throw new ResourceNotFoundException (from) ;
 			}
 		}
 		catch(Exception e) {}
-		return  emailsByFrom;
+		return  Emails;
 	}
 	
 
@@ -96,15 +93,15 @@ public class ServicesImplemetation implements EmailServices {
 	
 	@Override
 	public List<Email> getByMessageId(String messageId) throws ResourceNotFoundException {
-		List<Email> emailsByMessageId = repository.findAllByMessageId(messageId);
+		List<Email> Emails = repository.findAllByMessageId(messageId);
 		
 		try {
-			if ( emailsByMessageId.isEmpty() ) {
+			if ( Emails.isEmpty() ) {
 				throw new ResourceNotFoundException (messageId) ;
 			}
 		}
 		catch(Exception e) {}
-		return emailsByMessageId ;
+		return Emails ;
 	}
 	
 	
@@ -118,11 +115,11 @@ public class ServicesImplemetation implements EmailServices {
 	@Override
 	public List<Email> getById ( String id ) throws ResourceNotFoundException {
 		Email email =  repository.findByID(id) ;
-		List<Email> emailsById = new ArrayList<Email>() ;
-		emailsById.add(email) ;
-		if ( emailsById.isEmpty())
+		List<Email> emails = new ArrayList<Email>() ;
+		emails.add(email) ;
+		if ( emails.isEmpty())
 			throw new ResourceNotFoundException(id) ;
-		return emailsById ; 
+		return emails ; 
 		
 		
 	}
@@ -135,14 +132,14 @@ public class ServicesImplemetation implements EmailServices {
 
 	@Override
 	public List<Email> getByTo(String to)  throws ResourceNotFoundException {
-		List<Email> emailsByTo = (List<Email>)repository.findAllByTo(to);
+		List<Email> Emails = (List<Email>)repository.findAllByTo(to);
 		try {
-			if ( emailsByTo.isEmpty() ) {
+			if ( Emails.isEmpty() ) {
 				throw new ResourceNotFoundException (to) ;
 			}
 		}
 		catch(Exception e) {}
-		return emailsByTo ; 
+		return Emails ; 
 	}
 	
 	
@@ -155,8 +152,8 @@ public class ServicesImplemetation implements EmailServices {
 	
 	@Override
 	public List<Email> getByCC(String cc) {
-		List<Email> emailsByCc = (List<Email>)repository.findAllByCC(cc);
-		return emailsByCc ;
+		List<Email> Emails = (List<Email>)repository.findAllByCC(cc);
+		return Emails ;
 	}
 	
 	/**
@@ -167,8 +164,8 @@ public class ServicesImplemetation implements EmailServices {
 	
 	@Override
 	public List<Email> getByBCC(String bcc) {
-		List<Email> emailsByBcc = (List<Email>)repository.findAllByBCC(bcc);
-		return emailsByBcc ;
+		List<Email> Emails = (List<Email>)repository.findAllByBCC(bcc);
+		return Emails ;
 	}
 	
 	/**
@@ -179,8 +176,8 @@ public class ServicesImplemetation implements EmailServices {
 	
 	@Override
 	public List<Email> getBySubject(String subject) {
-		List<Email> emailsBySubject = (List<Email>)repository.findAllBySubject(subject);
-		return emailsBySubject ;
+		List<Email> Emails = (List<Email>)repository.findAllBySubject(subject);
+		return Emails ;
 	}
 	
 	/**
@@ -191,8 +188,8 @@ public class ServicesImplemetation implements EmailServices {
 	
 	@Override
 	public List<Email> getByContentType(String contentType) {
-		List<Email> emailsByContentType = (List<Email>)repository.findAllByContentType(contentType);
-		return emailsByContentType ;
+		List<Email> Emails = (List<Email>)repository.findAllByContentType(contentType);
+		return Emails ;
 	}
 	
 	
@@ -205,14 +202,14 @@ public class ServicesImplemetation implements EmailServices {
 	
 	@Override
 	public List<Email> getByBody(String body) {
-		List<Email> emailsByBody = (List<Email>)repository.findAllByBody(body);
-		return emailsByBody ;
+		List<Email> Emails = (List<Email>)repository.findAllByBody(body);
+		return Emails ;
 	}
 	
 
     /**
      * @param fromData, toDate
-     * @return list of emailsBy with particular date range
+     * @return list of emails with particular date range
      */
 	
 	@Override
@@ -220,16 +217,19 @@ public class ServicesImplemetation implements EmailServices {
 		
 		ServicesHelper servicesHelper = new ServicesHelper();
 		List<String> dateList = servicesHelper.getDateList(fromDate, toDate);
-		List<Email> emailsByDateRange = new ArrayList<>();
-		int limit = propertyValues.getDateLimit();
-		int offset = propertyValues.getDateOffset();
-		
+		for ( String date : dateList)
+		{
+			System.out.println(date);
+		}
+		List<Email> Emails = new ArrayList<>();
+		int limit = 10;
+		int offset = 0;
 		Pageable pageable = new OffsetBasedPageRequest(limit, offset);
 		for(String date: dateList) {
 			List<Email> tempDateList = repository.findAllByDate(date, pageable);
-			emailsByDateRange.addAll(tempDateList);
+			Emails.addAll(tempDateList);
 		}
-		return emailsByDateRange;
+		return Emails;
 	}
 	
 

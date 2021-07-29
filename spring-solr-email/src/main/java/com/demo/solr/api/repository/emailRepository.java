@@ -15,7 +15,7 @@ import org.springframework.stereotype.Repository;
 import com.demo.solr.api.model.Email;
 
 @Repository
-public interface EmailRepository extends SolrCrudRepository<Email, String> {
+public interface emailRepository extends SolrCrudRepository<Email, String> {
 
 	@Query("date:?0")
 	List<Email> findAllByDate(String date, Pageable pageable);

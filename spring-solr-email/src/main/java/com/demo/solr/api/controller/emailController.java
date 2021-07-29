@@ -19,15 +19,15 @@ import org.springframework.web.bind.annotation.RestController;
 import com.demo.solr.api.exception.ResourceNotFoundException;
 import com.demo.solr.api.model.Email;
 import com.demo.solr.api.propertyValues.PropertyValues;
-import com.demo.solr.api.services.EmailServices;
+import com.demo.solr.api.services.emailServices;
 
 //@CrossOrigin
 @RestController
-public class EmailController {
+public class emailController {
 
 	private final Logger logger = LoggerFactory.getLogger(this.getClass()) ;
 	@Autowired
-	EmailServices emailServices;
+	emailServices emailServices;
 	@Autowired
 	PropertyValues propertyValues ;
 	
@@ -46,9 +46,7 @@ public class EmailController {
 	 */
 	
 	@GetMapping("/api/v1/getAll")
-	public ResponseEntity <List<Email>> getAll() throws ResourceNotFoundException {
-		int limit = propertyValues.getLimit();
-		int offset = propertyValues.getOffset();
+	public ResponseEntity <List<Email>> getAll(@RequestParam int limit, @RequestParam int offset) throws ResourceNotFoundException {
 		logger.debug("Gell All Emails API call");
 		List<Email> emailResponse = emailServices.getAllEmails(limit,offset) ;
 		return new ResponseEntity<List<Email>> ( emailResponse, HttpStatus.ACCEPTED);
